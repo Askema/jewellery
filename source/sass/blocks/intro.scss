@@ -5,6 +5,11 @@
   background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-desktop@2x.jpg");
+  }
 
   & h1 {
     font-size: 45px;

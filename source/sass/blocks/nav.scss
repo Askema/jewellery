@@ -1,14 +1,58 @@
 .nav {
   display: flex;
   flex-direction: column;
-  padding: 30px 0 4px;
+  padding: 30px 0 2px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .nav__wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 68px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: $color-medium-wood;
+    width: 100%;
+    padding: 0 45px 80px 45px;
+  }
+
+  & button {
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 18px;
+    border: 0;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      left: 38px;
+      top: 52px;
+      border: 0;
+      background: transparent;
+      width: 25px;
+      height: 16px;
+    }
+  }
+
+  &--absolute {
+    position: absolute;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+.nav path {
+  @media (max-width: $tablet-width) {
+    stroke: $color-default-white;
+  }
 }
 
 .nav__search {
@@ -35,21 +79,78 @@
     left: -5px;
     top: 14px;
     border: 0;
+    display: block;
+  }
+
+  & svg {
+    width: 13px;
+    height: 15px;
+    fill: $color-default-black;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 2px;
+    display: block;
+
+    & input {
+      width: 100%;
+      margin: 0;
+      background: rgba($color-default-white, 0.15);
+      border-radius: 21px;
+      color: $color-default-white;
+      padding: 10px 50px;
+
+      &::placeholder {
+        padding: 0 15px;
+        color: transparent;
+      }
+    }
+
+    & button {
+      top: 14px;
+      left: 2px;
+    }
+
+    & svg {
+      width: 25px;
+      fill: $color-default-white;
+    }
   }
 }
 
 .nav__logo {
   flex-grow: 1;
+  width: 68%;
 
-  & svg {
+  & a {
+    top: 30px;
     width: 66px;
     height: 66px;
+    display: inline-block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     text-align: center;
+  }
+
+  & svg {
+    fill: $color-medium-wood;
+    width: 66px;
+    height: 66px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-grow: 0;
+    order: -1;
+    height: 133px;
+    padding: 66.5px 0;
+    width: 100%;
+
+    & svg {
+      fill: $color-default-white;
+    }
   }
 }
 
@@ -65,12 +166,54 @@
   flex-wrap: wrap;
   gap: 35px;
 
-  & span {
+  & span > span {
     margin-left: 5px;
+  }
+
+  & svg {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+    order: 5;
+
+    & a {
+      font-size: 18px;
+      line-height: 23.4px;
+      color: $color-default-white;
+    }
+
+    & a:last-of-type {
+      position: absolute;
+      right: 45px;
+      top: 54px;
+    }
+
+    & svg {
+      display: block;
+    }
+
+    & path {
+      stroke: $color-wood-bark;
+    }
+
+    & span {
+      display: none;
+    }
   }
 }
 
-.nav ul {
+.nav__user--open {
+  @media (max-width: $tablet-width) {
+    & path {
+      stroke: $color-default-white;
+    }
+  }
+}
+
+.nav__list--catalog {
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -79,4 +222,82 @@
   gap: 36px;
   padding: 0;
   padding-left: 11px;
+  margin-top: 69px;
+
+  @media (max-width: $tablet-width) {
+    margin: 45px 0 11px;
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    color: $color-default-white;
+    gap: 0;
+
+    & li {
+      margin-bottom: 21px;
+    }
+  }
+}
+
+.nav__list--tablet {
+  display: none;
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: $color-default-white;
+    gap: 0;
+    opacity: 0.75;
+
+    & li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Menu
+
+@media (max-width: $tablet-width) {
+
+  .nav__wrapper--close {
+    padding: 0;
+
+    & .nav__search {
+      display: none;
+    }
+
+    & ul {
+      display: none;
+    }
+
+    & path {
+      stroke: $color-wood-bark;
+    }
+  }
+
+  .nav__user--close {
+    & path {
+      stroke: $color-wood-bark;
+    }
+  }
+
+  .nav__user--close a:not(:last-of-type) {
+    display: none;
+  }
+
+  .nav__logo--close {
+    background: $color-default-white;
+
+    & svg {
+      fill: $color-medium-wood;
+    }
+  }
 }

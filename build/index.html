@@ -47,7 +47,9 @@
           <a>
             <span>Cart <span>0</span></span>
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 5C14 6.06087 13.5786 7.07828 12.8284 7.82843C12.0783 8.57857 11.0609 9 10 9C8.93913 9 7.92172 8.57857 7.17157 7.82843C6.42143 7.07828 6 6.06087 6 5M1 1H19V17H1V1Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                d="M14 5C14 6.06087 13.5786 7.07828 12.8284 7.82843C12.0783 8.57857 11.0609 9 10 9C8.93913 9 7.92172 8.57857 7.17157 7.82843C6.42143 7.07828 6 6.06087 6 5M1 1H19V17H1V1Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
         </div>
@@ -70,12 +72,65 @@
     <h1>PERFECTION</h1>
     <small>made to be yours</small>
   </section>
-
 </header>
 <main>
 </main>
-<footer>
-  <div class="container"></div>
+<footer class="footer">
+  <div class="footer__container">
+    <section class="subscription">
+      <h2>The good stuff in your inbox </h2>
+      <p>News and updates from CH. No spam, we promise.</p>
+      <form method="post">
+        <input type="email" name="email" placeholder="Your E-mail">
+        <button type="submit">
+          Sign Up
+          <svg width="29" height="9" viewBox="0 0 29 9">
+            <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </form>
+    </section>
+    <section class="contacts">
+      <ul class="contacts__list contacts__company">
+        <li>Ordering & Payment</li>
+        <li>Terms & Conditions</li>
+        <li>Returns & Exchanges</li>
+        <li>Delivery</li>
+      </ul>
+      <ul class="contacts__list contacts__about">
+        <li>About CH</li>
+        <li>Stores & Hours</li>
+        <li>Jobs</li>
+        <li>Contact Us</li>
+      </ul>
+      <ul class="contacts__list contacts__social">
+        <li>
+          <svg width="8" height="15" viewBox="0 0 8 15">
+            <use xlink:href="img/sprite_auto.svg#facebook"></use>
+          </svg>
+          <span>Facebook</span>
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 15 15">
+            <use xlink:href="img/sprite_auto.svg#instagram"></use>
+          </svg>
+          <span>Instagram</span>
+        </li>
+        <li>
+          <svg width="15" height="15" viewBox="0 0 15 15">
+            <use xlink:href="img/sprite_auto.svg#pinterest"></use>
+          </svg>
+          <span>Pinterest</span>
+        </li>
+        <li>
+          <svg width="15" height="13" viewBox="0 0 15 13">
+            <use xlink:href="img/sprite_auto.svg#twitter"></use>
+          </svg>
+          <span>Twitter</span>
+        </li>
+      </ul>
+    </section>
+  </div>
 </footer>
 
 <!-- Модалки -->

@@ -1009,6 +1009,140 @@ button,
   font-style: italic;
 }
 
+.footer {
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20.8px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 62px 0 100px;
+}
+
+.subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.subscription h2 {
+  font-size: 34px;
+  line-height: 44.2px;
+  font-family: "Cormorant Garamont", "Arial", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 0;
+}
+
+.subscription p {
+  margin-top: 10px;
+  margin-bottom: 36px;
+  color: #9B9997;
+}
+
+.subscription form {
+  position: relative;
+}
+
+.subscription input {
+  background: transparent;
+  border: 0;
+  width: 500px;
+  border-bottom: 1px solid #ffffff;
+  padding: 9px 0;
+}
+
+.subscription input::-webkit-input-placeholder {
+  color: #9B9997;
+}
+
+.subscription input::-moz-placeholder {
+  color: #9B9997;
+}
+
+.subscription input:-ms-input-placeholder {
+  color: #9B9997;
+}
+
+.subscription input::-ms-input-placeholder {
+  color: #9B9997;
+}
+
+.subscription input::placeholder {
+  color: #9B9997;
+}
+
+.subscription button {
+  position: absolute;
+  right: 75px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 500;
+  border: 0;
+  background: transparent;
+  top: 5px;
+}
+
+.subscription svg {
+  width: 37px;
+  height: 11px;
+  margin-left: 5px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1.9;
+  -ms-flex-positive: 1.9;
+  flex-grow: 1.9;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts ul {
+  margin-top: 35px;
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__about {
+  margin-right: 19px;
+}
+
+.contacts li {
+  margin-bottom: 21px;
+}
+
+.contacts svg {
+  width: 15px;
+  margin-right: 10px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1246,6 +1380,33 @@ button,
   .nav__logo--close svg {
     fill: #A87B62;
   }
+
+  .footer__container {
+    padding: 60px 45px;
+  }
+
+  .subscription form {
+    width: 80%;
+  }
+
+  .subscription input {
+    width: 100%;
+  }
+
+  .subscription button {
+    right: 0;
+  }
+
+  .contacts {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 11.8%;
+  }
+
+  .contacts ul {
+    margin-top: 46px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1264,6 +1425,67 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+
+  .subscription {
+    margin-bottom: 40px;
+  }
+
+  .subscription h2 {
+    padding-right: 50px;
+  }
+
+  .subscription p {
+    margin-top: 16px;
+    padding-right: 40px;
+  }
+
+  .subscription form {
+    width: auto;
+  }
+
+  .subscription input {
+    width: 100%;
+  }
+
+  .subscription button {
+    right: -10px;
+  }
+
+  .contacts {
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts ul {
+    margin-top: 5px;
+  }
+
+  .contacts__social {
+    gap: 6%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .contacts__social span {
+    display: none;
+  }
+
+  .contacts__social svg {
+    width: 20px;
+    height: 20px;
   }
 }
 

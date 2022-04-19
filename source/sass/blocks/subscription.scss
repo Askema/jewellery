@@ -1,0 +1,91 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.subscription h2 {
+  font-size: 34px;
+  line-height: 44.2px;
+  font-family: $ff-cormorant;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 0;
+
+  @media(max-width: $mobile-width) {
+    padding-right: 50px;
+  }
+}
+
+.subscription p {
+  margin-top: 10px;
+  margin-bottom: 36px;
+  color: $color-zorba;
+
+  @media(max-width: $mobile-width) {
+    margin-top: 16px;
+    padding-right: 40px;
+  }
+}
+
+.subscription form {
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    width: 80%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+  }
+}
+
+.subscription input {
+  background: transparent;
+  border: 0;
+  width: 500px;
+  border-bottom: 1px solid $color-default-white;
+  padding: 9px 0;
+  &::placeholder {
+    color: $color-zorba;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.subscription button {
+  position: absolute;
+  right: 75px;
+  color: $color-default-white;
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 500;
+  border: 0;
+  background: transparent;
+  top: 5px;
+
+  @media (max-width: $tablet-width) {
+    right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: -10px;
+  }
+}
+
+.subscription svg {
+  width: 37px;
+  height: 11px;
+  margin-left: 5px;
+}
+

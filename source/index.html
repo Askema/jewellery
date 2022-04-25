@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" CONTENT="ПЕЧАТНЫЕ ПЛАТЫ - производство и монтаж, поставка комплектующих, блоков и модулей">
+  <meta name="description" CONTENT="Jewellery">
   <title>Jewellery</title>
   <link href="css/style.min.css" rel="stylesheet preload" as="style">
   <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
@@ -44,7 +44,7 @@
         </div>
         <div class=" nav__user nav__user--open">
           <a href="login.html">Login</a>
-          <a>
+          <a href="#">
             <span>Cart <span>0</span></span>
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -54,16 +54,32 @@
           </a>
         </div>
         <ul class="nav__list nav__list--catalog">
-          <li>What’s new</li>
-          <li>Chokers</li>
-          <li>Necklaces</li>
-          <li>Rings</li>
-          <li>Earrings</li>
+          <li>
+            <a href="#">What’s new</a>
+          </li>
+          <li>
+            <a href="#">Chokers</a>
+          </li>
+          <li>
+            <a href="#">Necklaces</a>
+          </li>
+          <li>
+            <a href="#">Rings</a>
+          </li>
+          <li>
+            <a href="#">Earrings</a>
+          </li>
         </ul>
         <ul class="nav__list nav__list--tablet">
-          <li>About CH</li>
-          <li>Stores & Hours</li>
-          <li>Contact Us</li>
+          <li>
+            <a href="#">About CH</a>
+          </li>
+          <li>
+            <a href="#">Stores & Hours</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -73,7 +89,173 @@
     <small>made to be yours</small>
   </section>
 </header>
-<main>
+<main class="main">
+  <section class="slider">
+    <div class="slider__head">
+      <h2 class="slider-title">New In</h2>
+      <a href="#">Shop Now</a>
+      <button class="swiper-button-prev" type="button">
+        <svg width="30" height="11" viewBox="0 0 30 11" fill="none">
+          <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
+        </svg>
+      </button>
+      <button class="swiper-button-next" type="button">
+        <svg width="30" height="11" viewBox="0 0 30 11" fill="none">
+          <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
+        </svg>
+      </button>
+    </div>
+    <div class="image-slider swiper">
+      <div class="image-slider__wrapper swiper-wrapper">
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/purple-gemstone-desktop.webp 1x, img/purple-gemstone-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/purple-gemstone-desktop.jpg" width="270" height="284" alt="Ожерелье">
+            </picture>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 145</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/choker-desktop.webp 1x, img/choker-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/choker-desktop.jpg" width="270" height="284" alt="Печатные платы">
+            </picture>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/dainty-gold-desktop.webp 1x, img/dainty-gold-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/dainty-gold-desktop.jpg" width="270" height="284" alt="Печатные платы">
+            </picture>
+            <h3>Gold chain</h3>
+            <p>$ 215</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/galaxy-earrings-desktop.webp, img/galaxy-earrings-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Серьги">
+            </picture>
+            <h3>Galaxy earrings</h3>
+            <p>$ 95</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/purple-gemstone-desktop.webp 1x, img/purple-gemstone-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/purple-gemstone-desktop.jpg" width="270" height="284" alt="Ожерелье">
+            </picture>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 145</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/choker-desktop.webp 1x, img/choker-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/choker-desktop.jpg" width="270" height="284" alt="Печатные платы">
+            </picture>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/dainty-gold-desktop.webp 1x, img/dainty-gold-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/dainty-gold-desktop.jpg" width="270" height="284" alt="Печатные платы">
+            </picture>
+            <h3>Gold chain</h3>
+            <p>$ 215</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/galaxy-earrings-desktop.webp, img/galaxy-earrings-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Серьги">
+            </picture>
+            <h3>Galaxy earrings</h3>
+            <p>$ 95</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/purple-gemstone-desktop.webp 1x, img/purple-gemstone-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/purple-gemstone-desktop.jpg" width="270" height="284" alt="Ожерелье">
+            </picture>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 145</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/choker-desktop.webp 1x, img/choker-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/choker-desktop.jpg" width="270" height="284" alt="Печатные платы">
+            </picture>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/dainty-gold-desktop.webp 1x, img/dainty-gold-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/dainty-gold-desktop.jpg" width="270" height="284" alt="Печатные платы">
+            </picture>
+            <h3>Gold chain</h3>
+            <p>$ 215</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/galaxy-earrings-desktop.webp, img/galaxy-earrings-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Серьги">
+            </picture>
+            <h3>Galaxy earrings</h3>
+            <p>$ 95</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-pagination swiper-pagination">
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="footer">
   <div class="footer__container">
@@ -161,8 +343,7 @@
     </div>
   </div>
 </div>
-
-<script src="js/vendor.min.js"></script>
+<script src="js/vendor.min.js" type="module"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>

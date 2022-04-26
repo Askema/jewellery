@@ -39,10 +39,6 @@
   @media (max-width: $tablet-width) {
     right: 48px;
   }
-
-  &:after {
-    ransform: rotate(180deg);
-  }
 }
 
 .slider {

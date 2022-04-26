@@ -4,10 +4,6 @@
   min-width: 320px;
   margin: 0 auto;
   margin-top: 7.3rem;
-
-  @media (max-width: $tablet-width) {
-    padding: 0 45px;
-  }
 }
 
 .blog h2 {
@@ -161,6 +157,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .blog {
+    padding: 0 45px;
+  }
+
   .blog__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 300px 300px 300px;

@@ -2269,6 +2269,93 @@ button.swiper-pagination-bullet {
   flex: 0 1 97%;
 }
 
+.ask {
+  margin-top: 7.6rem;
+}
+
+.ask__wrapper {
+  border: 1px solid #A87B62;
+  max-width: 970px;
+  min-width: 767px;
+  margin: 0 auto;
+}
+
+.ask__container {
+  border-bottom: 1px solid #A87B62;
+}
+
+.ask__container:nth-child(4n) {
+  border: none;
+}
+
+.ask h2 {
+  font-family: "Cormorant Garamont", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ask button {
+  background-color: #ffffff;
+  color: #1D1613;
+  cursor: pointer;
+  padding: 2.6rem;
+  padding-bottom: 2.8rem;
+  width: 100%;
+  border: none;
+  position: relative;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.ask button:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 12px;
+  background: url("../img/svg/arrow-down.svg");
+  right: 3.1rem;
+  top: 3.1rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: #ffffff;
+  padding-bottom: 0.6rem;
+}
+
+.active:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.ask__panel {
+  padding: 0 18px;
+  background-color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.ask__panel--open {
+  max-height: none;
+}
+
+.ask p {
+  padding-left: 2rem;
+  padding-right: 24rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2663,6 +2750,32 @@ button.swiper-pagination-bullet {
   .blog__description--care {
     left: 0;
   }
+
+  .ask {
+    margin-top: 4.4rem;
+  }
+
+  .ask__wrapper {
+    max-width: 88%;
+  }
+
+  .ask button {
+    padding: 2.6rem 3rem 2.8rem;
+  }
+
+  .ask button:after {
+    right: 3.3rem;
+  }
+
+  .active {
+    padding-bottom: 0.6rem;
+  }
+
+  .ask p {
+    padding-left: 1.9rem;
+    padding-right: 4rem;
+    margin-top: 1.2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2799,6 +2912,40 @@ button.swiper-pagination-bullet {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+  }
+
+  .ask {
+    min-width: 290px;
+    margin-top: 3.3rem;
+  }
+
+  .ask__wrapper {
+    max-width: 100%;
+    min-width: 290px;
+  }
+
+  .ask h2 {
+    margin-bottom: 1.7rem;
+  }
+
+  .ask button {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 1rem 5.1rem 1rem 1.5rem;
+  }
+
+  .ask button:after {
+    right: 1.7rem;
+    top: 1.6rem;
+  }
+
+  .ask p {
+    font-size: 14px;
+    line-height: 140%;
+    padding-left: 0.4rem;
+    padding-right: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1.4rem;
   }
 }
 

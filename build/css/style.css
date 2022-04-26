@@ -1848,6 +1848,10 @@ button.swiper-pagination-bullet {
   padding: 62px 0 100px;
 }
 
+.footer a {
+  color: #ffffff;
+}
+
 .subscription {
   display: -webkit-box;
   display: -ms-flexbox;

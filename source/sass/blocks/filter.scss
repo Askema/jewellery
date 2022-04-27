@@ -1,0 +1,463 @@
+.filter {
+  flex: 0 1 21.4%;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.filter__close-button {
+  display: none;
+}
+
+.filter__fieldset {
+  position: relative;
+  border-bottom: 1px solid $color-medium-wood;
+}
+
+.filter__fieldset button {
+  border: 0;
+  background: transparent;
+}
+
+.filter form {
+  border-top: 1px solid $color-medium-wood;
+  border-left: 1px solid $color-medium-wood;
+  border-right: 1px solid $color-medium-wood;
+  width: 100%;
+}
+
+.filter__accordion {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 1.5rem 1.6rem 1.4rem 1.6rem;
+}
+
+.filter__accordion:after {
+  right: 1.55rem;
+  top: 1.8rem;
+}
+
+.filter__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.active + .filter__item {
+  margin-bottom: 1.7rem;
+}
+
+.filter__item label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: $color-wood-bark;
+  padding-left: 2.6rem;
+  position: relative;
+}
+
+.filter label {
+  padding-left: 1.2em;
+}
+
+.filter input {
+  appearance: none;
+  position: absolute;
+}
+
+.filter input[type=checkbox] {
+  position: absolute;
+  margin-top: 0.1rem;
+  margin-left: -1.6rem;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid $color-medium-wood;
+}
+
+.filter input:checked +.filter input[type=checkbox] {
+  background-color: $color-medium-wood;
+}
+
+.filter__range {
+  padding: 0;
+}
+
+.active + .filter__range  {
+  position: relative;
+  min-height: 53px;
+  margin-top: 0;
+  background-color: $color-default-white;
+  opacity: 1;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  bottom: 10px;
+}
+
+.active + .filter__range hr {
+  position: absolute;
+  width: 80.5%;
+  height: 1px;
+  background-color: $color-zorba;
+  opacity: 1;
+  z-index: 2;
+  top: 13px;
+  left: 25px;
+  margin: 0;
+  border: 0;
+}
+
+.active + .filter__range p {
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: $color-wood-bark;
+}
+
+.active + .filter__range p:nth-child(n) {
+  top: 12px;
+  left: 164px;
+}
+
+.active + .filter__range p:nth-child(2n) {
+  left: 62px;
+}
+
+.active + .filter__range hr::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: $color-medium-wood;
+  left: 50px;
+}
+.active + .filter__range::after,
+.active + .filter__range::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 69px;
+  width: 15px;
+  height: 15px;
+  background-color: $color-medium-wood;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.active + .filter__range::before {
+  left: 174px;
+}
+
+.filter__apply {
+  width: 100%;
+  height: 68px;
+  border: none;
+  background-color: $color-medium-wood;
+  color: $color-default-white;
+  border: 1px solid $color-medium-wood;
+  margin-top: 35px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.filter__apply:hover {
+  background-color: $color-default-white;
+  color: $color-medium-wood;
+}
+
+.filter__clearall {
+  width: 100%;
+  height: 68px;
+  background-color: $color-default-white;
+  border: 1px solid $color-medium-wood;
+  color: $color-wood-bark;
+  margin-top: 25px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.filter__clearall:hover {
+  background-color: $color-medium-wood;
+  color: $color-default-white;
+}
+
+@media(max-width: $tablet-width) {
+  .filter {
+    display: none;
+  }
+
+  .opened {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.8rem;
+    background-color: $color-default-white;
+    overflow: hidden;
+  }
+
+  .filter-close {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 11px;
+    right: 42.8%;
+    border: none;
+    padding: 0;
+    z-index: 1;
+    background-color: $color-default-white;
+  }
+
+  .opened .filter__accordion {
+    padding: 2rem 1.4rem 1.5rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .filter__accordion:after {
+    right: 2.8rem;
+    top: 2.5rem;
+  }
+
+  .filter form {
+    border: none;
+    width: 55%;
+    max-width: 442px;
+  }
+
+  .active+.filter__item {
+    margin-bottom: 2.15rem;
+  }
+
+  .active + .filter__range {
+    min-height: 80px;
+    margin-bottom: 0;
+  }
+
+  .filter__item {
+    gap: 18px;
+  }
+
+  .filter__item label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .filter input[type=checkbox] {
+    margin-top: 0;
+    margin-left: -1.8rem;
+    width: 17px;
+    height: 17px;
+  }
+
+  .active+.filter__range hr {
+    position: absolute;
+    width: 80.5%;
+    height: 1px;
+    background-color: #f0eae4;
+    opacity: 1;
+    z-index: 2;
+    top: 19px;
+    left: 25px;
+    margin: 0;
+    border: 0;
+  }
+
+  .active + .filter__range hr::after {
+    content: "";
+    position: absolute;
+    width: 32%;
+    height: 1px;
+    background-color: #a87b62;
+    left: 50px;
+  }
+
+  .active+.filter__range hr::after {
+    left: 59px;
+    width: 51%;
+  }
+  .active+.filter__range::after,
+  .active+.filter__range::before {
+    top: 11px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .active+.filter__range::after {
+    left: 76px;
+  }
+
+  .active+.filter__range::before {
+    left: 252px;
+  }
+
+  .active+.filter__range p:nth-child(n) {
+    top: 22px;
+    left: 242px;
+    font-style: 16px;
+  }
+
+  .active+.filter__range p:nth-child(2n) {
+    left: 69px;
+  }
+
+  .filter__apply,
+  .filter__clearall {
+    width: 47.3%;
+    position: relative;
+    max-width: 400px;
+    left: 20px;
+  }
+
+  .filter__apply {
+    margin-top: 2.6rem;
+  }
+
+  .opened .filter__accordion--material {
+    padding: 2.1rem 1.35rem 2.15rem 1.3rem;
+
+    &::after {
+      right: 2.65rem;
+      top: 2.7rem;
+    }
+  }
+
+  .opened .filter__accordion--collection {
+    padding: 2.1rem 1.4rem 2.1rem 1.35rem;
+
+    &::after {
+      right: 2.65rem;
+      top: 2.7rem;
+    }
+  }
+
+  .opened .filter__accordion--price {
+    padding: 2.1rem 1.4rem 1.5rem 1.35rem;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .opened {
+    padding-top: 4.3rem;
+  }
+
+  .opened .filter__accordion {
+    padding: 1.9rem 1.4rem 1.1rem 1.3rem;
+  }
+
+  .filter form {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 1.55rem;
+  }
+
+  .filter__accordion:after {
+    right: 1.5rem;
+    top: 2.4rem;
+  }
+
+  .filter-close {
+    top: 2.2%;
+    right: 4.7%;
+  }
+
+  .active + .filter__item {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .active+.filter__range {
+    min-height: 75px;
+    margin-bottom: 0rem;
+  }
+
+  .active + .filter__range hr {
+    top: 24px;
+  }
+
+  .active+.filter__range hr::after {
+    left: 37px;
+    width: 63%;
+  }
+
+  .active+.filter__range::after,
+  .active+.filter__range::before {
+    top: 16px;
+  }
+
+  .active+.filter__range::before {
+    left: 188px;
+  }
+
+  .active+.filter__range::after {
+    left: 50px;
+  }
+
+  .filter__item label {
+    padding-left: 2.6rem;
+  }
+
+  .active+.filter__range p:nth-child(n) {
+    top: 27px;
+    left: 179px;
+    font-style: 16px;
+  }
+
+  .active+.filter__range p:nth-child(2n) {
+    left: 44px;
+  }
+
+  .filter__apply,
+  .filter__clearall {
+    width: 72%;
+    margin: 0 auto;
+    max-width: 100%;
+    left: 0;
+  }
+
+  .filter__apply {
+    margin-top: 1.9rem;
+  }
+
+  .filter__clearall {
+    margin-top: 1.3rem;
+  }
+
+  .opened .filter__accordion--material {
+    padding: 1.5rem 1.35rem 1.45rem 1.3rem;
+
+    &::after {
+      right: 1.3rem;
+      top: 2rem;
+    }
+  }
+
+  .opened .filter__accordion--collection {
+    padding: 1.5rem 1.4rem 1.5rem 1.34rem;
+
+    &::after {
+      right: 1.3rem;
+      top: 2rem;
+    }
+  }
+
+  .opened .filter__accordion--price {
+    padding: 1.5rem 1.4rem 1.15rem 1.35rem;
+
+    &::after {
+      right: 1.5rem;
+      top: 2rem;
+    }
+  }
+}

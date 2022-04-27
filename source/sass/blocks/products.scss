@@ -1,0 +1,152 @@
+.products {
+  display: flex;
+  flex: 0 1 74%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 22px;
+}
+
+.products button:first-of-type {
+  display: none;
+}
+
+.products__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 22px;
+}
+
+.products__item {
+  flex: 0 1 31%;
+  text-align: center;
+}
+
+.products h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+.products p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  margin-top: 0.3rem;
+}
+
+.products__navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2.45rem;
+}
+
+.products__pagination {
+  display: flex;
+  gap: 13px;
+  margin-right: 2.4rem;
+}
+
+.products__pagination button {
+  height: min-content;
+  border: none;
+  background-color: $color-default-white;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.products__pagination button:hover {
+  color: $color-medium-wood;
+}
+
+.products__pagination button:active{
+  opacity: 0.7;
+}
+
+.products__pagination p {
+  margin: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.products__pagination p:hover {
+  opacity: 0.7;
+}
+
+.products__pagination p:active {
+  opacity: 0.4;
+}
+
+@media(max-width: $tablet-width) {
+  .products {
+    flex: 0 1 100%;
+    row-gap: 47px;
+    padding: 0 2.8rem;
+  }
+
+  .products__wrapper {
+    row-gap: 1.1rem;
+  }
+
+  .products button:first-of-type {
+    display: block;
+    width: 100%;
+    height: 68px;
+    background-color: $color-medium-wood;
+    color: $color-default-white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    border: none;
+  }
+
+  .products h3 {
+    margin-top: 1.1rem;
+  }
+
+  .products__navigation {
+    margin-top: 0.9rem;
+  }
+
+  .products__pagination {
+    margin-right: 2.1rem;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .products {
+    padding: 0 1rem;
+    row-gap: 41px;
+  }
+
+  .products__item {
+    flex: 0 1 45%;
+  }
+
+  .products__wrapper {
+    row-gap: 0.9rem;
+  }
+
+  .products h3 {
+    margin-top: 1rem;
+  }
+
+  .products__navigation {
+    margin-top: 0;
+    justify-content: center;
+    transform: translateY(-0.5rem);
+  }
+
+  .products__pagination {
+    gap: 1.45rem;
+    margin-right: 0;
+  }
+
+  .products button {
+    display: none;
+  }
+}

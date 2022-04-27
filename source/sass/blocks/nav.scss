@@ -9,6 +9,7 @@
 }
 
 .nav__wrapper {
+  z-index: 10;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -260,6 +261,12 @@
     & li {
       margin-bottom: 20px;
     }
+  }
+}
+
+.nav a {
+  @media (max-width: $tablet-width) {
+    color: $color-default-white;
   }
 }
 

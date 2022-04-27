@@ -1663,12 +1663,6 @@ button.swiper-pagination-bullet {
   border: 0;
 }
 
-.nav__wrapper--absolute {
-  position: absolute;
-  height: 100%;
-  overflow-y: scroll;
-}
-
 .nav__search {
   position: relative;
   padding-top: 11px;
@@ -3039,6 +3033,12 @@ button.swiper-pagination-bullet {
 
   .nav a {
     color: #ffffff;
+  }
+
+  .nav__wrapper--absolute {
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
   }
 
   .nav__wrapper--close {

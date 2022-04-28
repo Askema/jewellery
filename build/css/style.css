@@ -2391,6 +2391,14 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 
+.no-js .ask__panel {
+  max-height: none;
+}
+
+.no-js .active:after {
+  display: none;
+}
+
 .work {
   text-align: center;
   max-width: 1180px;
@@ -3042,6 +3050,11 @@ button.swiper-pagination-bullet {
   text-align: right;
 }
 
+.no-js .swiper-button-prev,
+.no-js .swiper-button-next {
+  display: none;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -3067,6 +3080,12 @@ button.swiper-pagination-bullet {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/catalog/intro-catalog@2x.jpg");
     background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog@2x.jpg");
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog@2x.jpg");
+  }
+}
+
+@media (min-width: 1023px) {
+  .no-js .swiper-slide {
+    width: 25%;
   }
 }
 

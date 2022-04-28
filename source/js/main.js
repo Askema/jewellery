@@ -5,7 +5,12 @@ import './modules/accordion';
 import './modules/filter';
 import './modules/login';
 
+const body = document.querySelector('.body');
+
+// No-js
 // ---------------------------------
+body.classList.remove('.no-js');
+
 
 window.addEventListener('DOMContentLoaded', () => {
 

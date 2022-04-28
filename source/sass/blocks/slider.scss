@@ -226,3 +226,11 @@
     margin-top: 2rem;
   }
 }
+
+// no-js
+
+.no-js .swiper-slide {
+  @media (min-width: $tablet-width) {
+    width: 25%;
+  }
+}

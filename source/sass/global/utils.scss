@@ -60,6 +60,22 @@
   }
 }
 
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-default-white;
+  z-index: 10;
+  overflow-y: hidden;
+
+  &--active {
+    display: block;
+  }
+}
+
 .no-transition {
   /* stylelint-disable-next-line */
   transition: none !important;

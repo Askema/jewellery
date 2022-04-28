@@ -15,7 +15,7 @@
   <link rel="preload" href="fonts/cormorant-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body>
+<body class="body no-js">
 <header class="header">
   <div class="header__container">
     <nav class="nav">
@@ -36,7 +36,7 @@
           </form>
         </div>
         <div class="nav__logo">
-          <a>
+          <a href="index.html">
             <svg width="66" height="66" viewBox="0 0 66 66">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
@@ -85,91 +85,89 @@
     </nav>
   </div>
   <section class="header__intro intro intro--catalog">
-    <h1>PERFECTION</h1>
-    <small>made to be yours</small>
+    <h1>ALL JEWELLERY</h1>
+    <small>Discover picks of fashion's finest trends in our jewellery catalog</small>
   </section>
 </header>
 <main class="main main--catalog">
   <section class="filter">
     <form>
-      <button class="filter__close-button" aria-label="close">
-        <svg width="32" height="32">
-          <use xlink:href="#close"></use>
-        </svg>
-      </button>
-      <div class="filter__fieldset">
-        <button>Product</button>
-        <div class="filter__panel panel">
+      <div class="filter__close">
+        <button type="button" aria-label="close">
+          <svg width="14" height="14" viewBox="0 0 14 14">
+            <use xlink:href="img/sprite_auto.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="filter__fieldset filter__fieldset--active">
+        <button type="button">Product</button>
+        <div class="filter__item">
           <label>
             <input type="checkbox" name="check" checked>
-            <span></span>
-            Necklaces
+            <span>Necklaces</span>
           </label>
           <label>
             <input type="checkbox" name="check" checked>
-            <span></span>
-            Chokers
+            <span>Chokers</span>
           </label>
           <label>
             <input type="checkbox" name="check">
-            <span></span>
-            Rings
+            <span>Rings</span>
           </label>
           <label>
             <input type="checkbox" name="check" checked>
-            <span></span>
-            Earrings
+            <span>Earrings</span>
           </label>
         </div>
       </div>
       <div class="filter__fieldset">
-        <button aria-label="Accordion Button">Material
-        </button>
-        <div class="panel filter__panel">
+        <button type="button" aria-label="Accordion Button">Material</button>
+        <div class="filter__item">
           <label>
             <input type="checkbox" name="check" checked>
-            <span></span>
-            Gold
+            <span>Gold</span>
           </label>
           <label>
             <input type="checkbox" name="check" checked>
-            <span></span>
-            Silver
+            <span>Silver</span>
           </label>
         </div>
       </div>
       <div class="filter__fieldset">
-        <button aria-label="Accordion Button">
-          Collection
-        </button>
-        <div class="panel filter__panel">
+        <button type="button" aria-label="Accordion Button">Collection</button>
+        <div class="filter__item">
           <label>
             <input type="checkbox" name="check" checked>
-            <span></span>
-            Pink flamingo
+            <span>Pink flamingo</span>
           </label>
           <label>
             <input type="checkbox" name="check" checked>
-            <span></span>
-            Dreams
+            <span>Dreams</span>
           </label>
         </div>
       </div>
-      <div class="filter__fieldset">
-        <button aria-label="Accordion Button">Price
-        </button>
-        <div class="panel filter__range">
-          <hr>
-          <p>$ 55</p>
-          <p>$ 155</p>
+      <div class="filter__fieldset filter__fieldset--active filter__fieldset--range">
+        <button type="button" aria-label="Accordion Button">Price</button>
+        <div class="filter__range-controls">
+          <div class="filter__scale">
+            <div class="filter__bar"></div>
+          </div>
+          <div aria-label="Ползунок" class="filter__toggle filter__toggle--min"></div>
+          <span>$ 55</span>
+          <div aria-label="Ползунок" class="filter__toggle filter__toggle--max"></div>
+          <span>$ 155</span>
         </div>
       </div>
-      <button class="filter__apply" aria-label="Button Apply">Apply</button>
-      <button class="filter__clearall" aria-label="Button Clear All">Clear All</button>
+      <div class="filter__buttons">
+        <button type="button" class="filter__apply" aria-label="Button Apply">Apply</button>
+        <button type="reset" class="filter__clearall" aria-label="Button Clear All">Clear All</button>
+      </div>
     </form>
   </section>
   <section class="products">
-    <button aria-label="Filter">Filter</button>
+    <div class="products__head">
+      <button type="button" aria-label="Filter">Filter</button>
+    </div>
     <div class="products__wrapper">
       <div class="products__item">
         <picture>
@@ -292,16 +290,17 @@
         <p>$ 95</p>
       </div>
     </div>
+    <hr>
     <div class="products__navigation">
-      <button aria-label="Button Previous">Previous</button>
+      <button type="button" aria-label="Button Previous">Previous</button>
       <div class="products__pagination">
-        <p class="page">1</p>
-        <p class="page">2</p>
-        <p class="page">3</p>
-        <p class="page">4</p>
-        <p class="page">5</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
       </div>
-      <button aria-label="Button Next">Next</button>
+      <button type="button" aria-label="Button Next">Next</button>
     </div>
   </section>
 </main>
@@ -370,6 +369,7 @@
     </section>
   </div>
 </footer>
+<div class="overlay"></div>
 <script src="js/main.min.js"></script>
 </body>
 </html>

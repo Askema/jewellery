@@ -23,24 +23,24 @@
     width: 100%;
     padding: 0 45px 80px 45px;
   }
+}
 
-  & button {
-    display: none;
+.nav__wrapper button {
+  display: none;
+  position: absolute;
+  width: 25px;
+  height: 18px;
+  border: 0;
+
+  @media (max-width: $tablet-width) {
+    display: block;
     position: absolute;
-    width: 25px;
-    height: 18px;
+    left: 38px;
+    top: 52px;
     border: 0;
-
-    @media (max-width: $tablet-width) {
-      display: block;
-      position: absolute;
-      left: 38px;
-      top: 52px;
-      border: 0;
-      background: transparent;
-      width: 25px;
-      height: 16px;
-    }
+    background: transparent;
+    width: 25px;
+    height: 16px;
   }
 }
 
@@ -66,57 +66,57 @@
   position: relative;
   padding-top: 11px;
 
-  & input {
-    margin-left: 28px;
-    font-family: $ff-poppins;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 500;
-    color: $color-wood-bark;
-    border: 0;
-
-    &::placeholder {
-      color: $color-zorba;
-    }
-  }
-
-  & button {
-    background: $color-transparent;
-    position: absolute;
-    left: -5px;
-    top: 14px;
-    border: 0;
-    display: block;
-  }
-
-  & svg {
-    width: 13px;
-    height: 15px;
-    fill: $color-default-black;
-  }
-
   @media (max-width: $tablet-width) {
     padding-top: 2px;
     display: block;
+  }
+}
 
-    & input {
-      width: 100%;
-      margin: 0;
-      background: rgba($color-default-white, 0.15);
-      border-radius: 21px;
-      color: $color-default-white;
-      padding: 10px 50px;
+.nav__search input {
+  margin-left: 28px;
+  font-family: $ff-poppins;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: $color-wood-bark;
+  border: 0;
 
-      &::placeholder {
-        padding: 0 15px;
-        color: transparent;
-      }
+  &::placeholder {
+    color: $color-zorba;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    background: rgba($color-default-white, 0.15);
+    border-radius: 21px;
+    color: $color-default-white;
+    padding: 10px 50px;
+
+    &::placeholder {
+      padding: 0 15px;
+      color: transparent;
     }
+  }
+}
 
-    & svg {
-      width: 25px;
-      fill: $color-default-white;
-    }
+.nav__search button {
+  background: $color-transparent;
+  position: absolute;
+  left: -5px;
+  top: 14px;
+  border: 0;
+  display: block;
+}
+
+.nav__search svg {
+  width: 13px;
+  height: 15px;
+  fill: $color-default-black;
+
+  @media (max-width: $tablet-width) {
+    width: 25px;
+    fill: $color-default-white;
   }
 }
 
@@ -167,49 +167,53 @@
   flex-wrap: wrap;
   gap: 35px;
 
-  & span > span {
-    margin-left: 5px;
-  }
-
-  & svg {
-    display: none;
-  }
-
   @media (max-width: $tablet-width) {
     padding-top: 0;
     order: 5;
+  }
+}
 
-    & a {
-      font-size: 18px;
-      line-height: 23.4px;
-      color: $color-default-white;
-    }
+.nav__user span > span {
+  margin-left: 5px;
+}
 
-    & a:last-of-type {
+.nav__user svg {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.nav__user a {
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 23.4px;
+    color: $color-default-white;
+
+    &:last-of-type {
       position: absolute;
       right: 45px;
       top: 54px;
     }
-
-    & svg {
-      display: block;
-    }
-
-    & path {
-      stroke: $color-wood-bark;
-    }
-
-    & span {
-      display: none;
-    }
   }
 }
 
-.nav__user--open {
+.nav__user path {
   @media (max-width: $tablet-width) {
-    & path {
-      stroke: $color-default-white;
-    }
+    stroke: $color-wood-bark;
+  }
+}
+
+.nav__user span {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__user--open path {
+  @media (max-width: $tablet-width) {
+    stroke: $color-default-white;
   }
 }
 
@@ -234,10 +238,12 @@
     line-height: 36px;
     color: $color-default-white;
     gap: 0;
+  }
+}
 
-    & li {
-      margin-bottom: 21px;
-    }
+.nav__list--catalog li {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 21px;
   }
 }
 
@@ -257,10 +263,12 @@
     color: $color-default-white;
     gap: 0;
     opacity: 0.75;
+  }
+}
 
-    & li {
-      margin-bottom: 20px;
-    }
+.nav__list--tablet li {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -281,18 +289,18 @@
 
   .nav__wrapper--close {
     padding: 0;
+  }
 
-    & .nav__search {
-      display: none;
-    }
+  .nav__wrapper--close .nav__search {
+    display: none;
+  }
 
-    & ul {
-      display: none;
-    }
+  .nav__wrapper--close ul {
+    display: none;
+  }
 
-    & path {
-      stroke: $color-wood-bark;
-    }
+  .nav__wrapper--close path {
+    stroke: $color-wood-bark;
   }
 
   .nav__search button {
@@ -300,10 +308,8 @@
     left: 2px;
   }
 
-  .nav__user--close {
-    & path {
-      stroke: $color-wood-bark;
-    }
+  .nav__user--close path {
+    stroke: $color-wood-bark;
   }
 
   .nav__user--close a:not(:last-of-type) {
@@ -313,10 +319,10 @@
   .nav__logo--close {
     background: $color-default-white;
     padding: 62.5px;
+  }
 
-    & svg {
-      fill: $color-medium-wood;
-    }
+  .nav__logo--close svg {
+    fill: $color-medium-wood;
   }
 }
 

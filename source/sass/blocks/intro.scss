@@ -11,22 +11,22 @@
   @media only screen and (min-resolution: 2dppx) and (min-width: $tablet-width) {
     background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-desktop@2x.jpg");
   }
+}
 
-  & h1 {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 58.5px;
-    letter-spacing: 1.3px;
-    margin: 0;
-    margin-bottom: -5px;
-  }
+.intro h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 58.5px;
+  letter-spacing: 1.3px;
+  margin: 0;
+  margin-bottom: -5px;
+}
 
-  & small {
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 49.4px;
-    font-style: italic;
-  }
+.intro small {
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 49.4px;
+  font-style: italic;
 }
 
 .intro--catalog {
@@ -39,18 +39,18 @@
   @media only screen and (min-resolution: 2dppx) and (min-width: $tablet-width) {
     background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/catalog/intro-catalog@2x.jpg");
   }
+}
 
-  & h1 {
-    font-size: 34px;
-    line-height: 44.2px;
-    letter-spacing: 0;
-  }
+.intro--catalog h1 {
+  font-size: 34px;
+  line-height: 44.2px;
+  letter-spacing: 0;
+}
 
-  & small {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 41.6px;
-  }
+.intro--catalog small {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 41.6px;
 }
 
 @media (max-width: $tablet-width) {
@@ -60,11 +60,11 @@
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-tablet@2x.jpg");
     }
+  }
 
-    & h1,
-    & small {
-      margin-right: 15px;
-    }
+  .intro h1,
+  .intro small {
+    margin-right: 15px;
   }
 
   .intro--catalog {
@@ -73,41 +73,41 @@
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-tablet@2x.jpg");
     }
+  }
 
-    & h1,
-    & small {
-      margin-right: 0;
-    }
+  .intro--catalog h1,
+  .intro--catalog small {
+    margin-right: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
   .intro {
     padding: 185px 38px 194px;
-
-    & h1 {
-      font-size: 38px;
-      letter-spacing: 0.03em;
-      margin-right: 0;
-    }
-
-    & small {
-      margin-right: 0;
-      font-size: 34px;
-      line-height: 30.4px;
-    }
   }
 
+  .intro h1 {
+    font-size: 34px;
+    line-height: 44.2px;
+    letter-spacing: 0.03em;
+    margin-right: 0;
+  }
+
+  .intro small {
+    margin-right: 0;
+    font-size: 22px;
+    line-height: 120%;
+  }
 
   .intro--catalog {
     padding: 82px 15px;
+  }
 
-    & h1 {
-      margin-bottom: 0;
-    }
+  .intro--catalog h1 {
+    margin-bottom: 0;
+  }
 
-    & small {
-      line-height: 27.6px;
-    }
+  .intro--catalog small {
+    line-height: 27.6px;
   }
 }

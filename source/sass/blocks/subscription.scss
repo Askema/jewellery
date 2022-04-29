@@ -16,7 +16,7 @@
   letter-spacing: 0.8px;
   margin-bottom: 0;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     padding-right: 50px;
   }
 }
@@ -26,7 +26,7 @@
   margin-bottom: 36px;
   color: $color-zorba;
 
-  @media(max-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     margin-top: 16px;
     padding-right: 40px;
   }
@@ -50,6 +50,7 @@
   width: 500px;
   border-bottom: 1px solid $color-default-white;
   padding: 9px 0;
+
   &::placeholder {
     color: $color-zorba;
   }
@@ -88,4 +89,3 @@
   height: 11px;
   margin-left: 5px;
 }
-

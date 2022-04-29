@@ -15,7 +15,7 @@
     display: none;
   }
 
-  &:after {
+  &::after {
     content: "";
     background: url("../img/svg/arrow-left.svg") no-repeat;
     width: 100%;
@@ -179,7 +179,7 @@
 
 
 .swiper-horizontal > .swiper-pagination-bullets {
-  bottom: 0px;
+  bottom: 0;
   left: -1px;
 }
 
@@ -204,20 +204,18 @@
     margin: 0 auto;
   }
 
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
   }
 
   .image-pagination {
     position: relative;
     margin-top: 2.6rem;
   }
-
 }
 
 @media (max-width: $mobile-width) {
-
   .slider {
     margin-top: 3.7rem;
     max-width: 90%;

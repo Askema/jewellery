@@ -1521,8 +1521,8 @@ button.swiper-pagination-bullet {
 .header {
   text-align: center;
   overflow-x: hidden;
-  background: -o-linear-gradient(transparent 115px, #F6F5F4 116px, transparent 116px);
-  background: linear-gradient(transparent 115px, #F6F5F4 116px, transparent 116px);
+  background: -o-linear-gradient(transparent 115px, #f6f5f4 116px, transparent 116px);
+  background: linear-gradient(transparent 115px, #f6f5f4 116px, transparent 116px);
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -1705,28 +1705,28 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  color: #1D1613;
+  color: #1d1613;
   border: 0;
 }
 
 .nav__search input::-webkit-input-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .nav__search input::-moz-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .nav__search input:-ms-input-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .nav__search input::-ms-input-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .nav__search input::placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .nav__search button {
@@ -1765,7 +1765,7 @@ button.swiper-pagination-bullet {
 }
 
 .nav__logo svg {
-  fill: #A87B62;
+  fill: #A87b62;
   width: 66px;
   height: 66px;
 }
@@ -1776,7 +1776,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  color: #1D1613;
+  color: #1d1613;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1827,7 +1827,7 @@ button.swiper-pagination-bullet {
   padding: 180px 30px;
   font-family: "Cormorant Garamont", "Arial", sans-serif;
   color: #ffffff;
-  background-color: #F0EAE4;
+  background-color: #f0eae4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-desktop.jpg");
   background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop.jpg");
   background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop.jpg");
@@ -1944,7 +1944,7 @@ button.swiper-pagination-bullet {
 .subscription p {
   margin-top: 10px;
   margin-bottom: 36px;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription form {
@@ -1960,23 +1960,23 @@ button.swiper-pagination-bullet {
 }
 
 .subscription input::-webkit-input-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription input::-moz-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription input:-ms-input-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription input::-ms-input-placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription input::placeholder {
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .subscription button {
@@ -2073,7 +2073,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-size: 34px;
   line-height: 130%;
-  color: #1D1613;
+  color: #1d1613;
   margin-bottom: 0;
 }
 
@@ -2083,7 +2083,7 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   line-height: 130%;
   display: inline-block;
-  color: #1D1613;
+  color: #1d1613;
   text-decoration: none;
   margin-top: 1.4rem;
   position: relative;
@@ -2097,13 +2097,13 @@ button.swiper-pagination-bullet {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #A87B62;
+  background-color: #A87b62;
   bottom: 0;
   left: 0;
 }
 
 .slider__head a:hover {
-  color: #A87B62;
+  color: #A87b62;
 }
 
 .slider__head a:active {
@@ -2111,7 +2111,7 @@ button.swiper-pagination-bullet {
 }
 
 .slider h3 {
-  color: #1D1613;
+  color: #1d1613;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
@@ -2120,7 +2120,7 @@ button.swiper-pagination-bullet {
 }
 
 .slider p {
-  color: #1D1613;
+  color: #1d1613;
   font-weight: 700;
   font-size: 14px;
   line-height: 130%;
@@ -2165,7 +2165,7 @@ button.swiper-pagination-bullet {
 }
 
 .blog__image {
-  background-color: #F0EAE4;
+  background-color: #f0eae4;
 }
 
 .blog h2 {
@@ -2173,7 +2173,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-size: 34px;
   line-height: 130%;
-  color: #1D1613;
+  color: #1d1613;
   margin-bottom: 0;
 }
 
@@ -2181,7 +2181,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
-  color: #1D1613;
+  color: #1d1613;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -2196,7 +2196,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #A87B62;
+  background-color: #A87b62;
   bottom: -4px;
   left: 0;
 }
@@ -2251,7 +2251,7 @@ button.swiper-pagination-bullet {
 }
 
 .blog__description {
-  background-color: #F0EAE4;
+  background-color: #f0eae4;
   text-align: center;
   width: 100%;
   -webkit-box-flex: 0;
@@ -2264,7 +2264,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-size: 14px;
   line-height: 130%;
-  color: #9B9997;
+  color: #9b9997;
   margin-top: 4.2rem;
   margin-bottom: 0;
 }
@@ -2274,7 +2274,7 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   font-size: 26px;
   line-height: 130%;
-  color: #1D1613;
+  color: #1d1613;
   margin-top: 0.9rem;
   padding-left: 3.5rem;
   padding-right: 2.9rem;
@@ -2348,13 +2348,13 @@ button.swiper-pagination-bullet {
 }
 
 .ask__wrapper {
-  border: 1px solid #A87B62;
+  border: 1px solid #A87b62;
   max-width: 970px;
   margin: 0 auto;
 }
 
 .ask__container {
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #A87b62;
 }
 
 .ask__container:nth-child(4n) {
@@ -2373,7 +2373,7 @@ button.swiper-pagination-bullet {
 
 .ask button {
   background-color: #ffffff;
-  color: #1D1613;
+  color: #1d1613;
   cursor: pointer;
   padding: 2.6rem;
   padding-bottom: 2.8rem;
@@ -2386,7 +2386,7 @@ button.swiper-pagination-bullet {
   line-height: 23px;
 }
 
-.ask button:after {
+.ask button::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -2403,7 +2403,7 @@ button.swiper-pagination-bullet {
   padding-bottom: 6px;
 }
 
-.ask .active:after {
+.ask .active::after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -2433,7 +2433,7 @@ button.swiper-pagination-bullet {
   max-height: none;
 }
 
-.no-js .active:after {
+.no-js .active::after {
   display: none;
 }
 
@@ -2451,7 +2451,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-size: 34px;
   line-height: 130%;
-  color: #1D1613;
+  color: #1d1613;
   margin-bottom: 0;
 }
 
@@ -2459,7 +2459,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
-  color: #1D1613;
+  color: #1d1613;
   text-decoration: none;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2474,13 +2474,13 @@ button.swiper-pagination-bullet {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #A87B62;
+  background-color: #A87b62;
   bottom: -4px;
   left: 0;
 }
 
 .work a:hover {
-  color: #A87B62;
+  color: #A87b62;
 }
 
 .work a:active {
@@ -2643,7 +2643,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   height: 1px;
   width: 100%;
-  background-color: #F6F5F4;
+  background-color: #f6f5f4;
   left: 0;
   overflow-x: hidden;
 }
@@ -2678,7 +2678,7 @@ button.swiper-pagination-bullet {
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   line-height: 20.8px;
-  color: #1D1613;
+  color: #1d1613;
 }
 
 .products__navigation button:hover {
@@ -2693,7 +2693,7 @@ button.swiper-pagination-bullet {
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   line-height: 20.8px;
-  color: #9B9997;
+  color: #9b9997;
   margin: 0;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -2710,7 +2710,7 @@ button.swiper-pagination-bullet {
 }
 
 .products__pagination p:first-of-type {
-  color: #1D1613;
+  color: #1d1613;
 }
 
 .filter {
@@ -2739,7 +2739,7 @@ button.swiper-pagination-bullet {
 
 .filter__scale {
   height: 1px;
-  background-color: #F0EAE4;
+  background-color: #f0eae4;
   position: relative;
 }
 
@@ -2748,7 +2748,7 @@ button.swiper-pagination-bullet {
   left: 58px;
   width: 50%;
   height: 100%;
-  background-color: #A87B62;
+  background-color: #A87b62;
 }
 
 .filter__toggle {
@@ -2762,8 +2762,8 @@ button.swiper-pagination-bullet {
   -ms-transform: translateY(-56%);
   transform: translateY(-56%);
   border-radius: 50%;
-  border: 8px solid #A87B62;
-  background-color: #A87B62;
+  border: 8px solid #A87b62;
+  background-color: #A87b62;
   cursor: pointer;
   overflow: hidden;
 }
@@ -2802,12 +2802,12 @@ button.swiper-pagination-bullet {
 .filter__fieldset {
   padding: 21px 19px;
   position: relative;
-  border: 1px solid #A87B62;
+  border: 1px solid #A87b62;
   border-bottom: none;
 }
 
 .filter__fieldset--range {
-  border-bottom: 1px solid #A87B62;
+  border-bottom: 1px solid #A87b62;
 }
 
 .filter__fieldset button {
@@ -2815,7 +2815,7 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   line-height: 20.8px;
   font-weight: 500;
-  color: #1D1613;
+  color: #1d1613;
   border: 0;
   background: transparent;
 }
@@ -2879,7 +2879,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-size: 14px;
   line-height: 130%;
-  color: #1D1613;
+  color: #1d1613;
   padding-left: 2.6rem;
   position: relative;
 }
@@ -2905,11 +2905,11 @@ button.swiper-pagination-bullet {
   background-color: white;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border: 1px solid #A87B62;
+  border: 1px solid #A87b62;
 }
 
 .filter input[type=checkbox]:checked {
-  background-color: #A87B62;
+  background-color: #A87b62;
 }
 
 .filter button:hover,
@@ -2931,9 +2931,9 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 68px;
   border: none;
-  background-color: #A87B62;
+  background-color: #A87b62;
   color: #ffffff;
-  border: 1px solid #A87B62;
+  border: 1px solid #A87b62;
   margin-top: 35px;
   cursor: pointer;
 }
@@ -2942,8 +2942,8 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 68px;
   background-color: #ffffff;
-  border: 1px solid #A87B62;
-  color: #1D1613;
+  border: 1px solid #A87b62;
+  color: #1d1613;
   margin-top: 25px;
   cursor: pointer;
 }
@@ -2984,7 +2984,7 @@ button.swiper-pagination-bullet {
 .login {
   display: none;
   font-family: "Poppins", "Arial", sans-serif;
-  background: #F0EAE4;
+  background: #f0eae4;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3067,11 +3067,11 @@ button.swiper-pagination-bullet {
   margin-bottom: 25px;
   border: 0;
   background: transparent;
-  color: #1D1613;
+  color: #1d1613;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  border-bottom: 1px solid #1D1613;
+  border-bottom: 1px solid #1d1613;
   padding: 9px 9px 9px 0;
 }
 
@@ -3088,8 +3088,8 @@ button.swiper-pagination-bullet {
   margin-top: 45px;
   margin-bottom: 12px;
   height: 68px;
-  background: #A87B62;
-  border: 1px solid #A87B62;
+  background: #A87b62;
+  border: 1px solid #A87b62;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
@@ -3101,17 +3101,17 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #9B9997;
+  color: #9b9997;
 }
 
 .login__wrapper span {
-  color: #1D1613;
+  color: #1d1613;
   margin-left: 8px;
 }
 
 .login__form a {
   margin-right: 0;
-  color: #9B9997;
+  color: #9b9997;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
@@ -3169,7 +3169,7 @@ button.swiper-pagination-bullet {
   }
 
   .header {
-    background-color: #A87B62;
+    background-color: #A87b62;
   }
 
   .header__container {
@@ -3190,7 +3190,7 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-color: #A87B62;
+    background-color: #A87b62;
     width: 100%;
     padding: 0 45px 80px 45px;
   }
@@ -3293,7 +3293,7 @@ button.swiper-pagination-bullet {
   }
 
   .nav__user path {
-    stroke: #1D1613;
+    stroke: #1d1613;
   }
 
   .nav__user span {
@@ -3366,7 +3366,7 @@ button.swiper-pagination-bullet {
   }
 
   .nav__wrapper--close path {
-    stroke: #1D1613;
+    stroke: #1d1613;
   }
 
   .nav__search button {
@@ -3375,7 +3375,7 @@ button.swiper-pagination-bullet {
   }
 
   .nav__user--close path {
-    stroke: #1D1613;
+    stroke: #1d1613;
   }
 
   .nav__user--close a:not(:last-of-type) {
@@ -3388,7 +3388,7 @@ button.swiper-pagination-bullet {
   }
 
   .nav__logo--close svg {
-    fill: #A87B62;
+    fill: #A87b62;
   }
 
   .intro {
@@ -3605,7 +3605,7 @@ button.swiper-pagination-bullet {
     padding: 2.6rem 3rem 2.8rem;
   }
 
-  .ask button:after {
+  .ask button::after {
     right: 3.3rem;
   }
 
@@ -3656,7 +3656,7 @@ button.swiper-pagination-bullet {
     display: block;
     width: 100%;
     height: 68px;
-    background-color: #A87B62;
+    background-color: #A87b62;
     color: #ffffff;
     font-weight: 500;
     font-size: 16px;
@@ -3709,7 +3709,7 @@ button.swiper-pagination-bullet {
   .filter__fieldset {
     padding: 35px 18px 30px 17px;
     border: none;
-    border-bottom: 1px solid #A87B62;
+    border-bottom: 1px solid #A87b62;
     margin-right: 40px;
   }
 
@@ -3736,7 +3736,7 @@ button.swiper-pagination-bullet {
   }
 
   .filter__toggle {
-    border: 9px solid #A87B62;
+    border: 9px solid #A87b62;
     -webkit-transform: translateY(-74%);
     -ms-transform: translateY(-74%);
     transform: translateY(-74%);
@@ -3782,7 +3782,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     border: 0;
     border-radius: 50%;
-    background: #1D1613;
+    background: #1d1613;
   }
 
   .filter__item {
@@ -4097,7 +4097,7 @@ button.swiper-pagination-bullet {
     padding: 18px 62px 18px 25px;
   }
 
-  .ask button:after {
+  .ask button::after {
     right: 23px;
     top: 1.6rem;
   }
@@ -4133,7 +4133,7 @@ button.swiper-pagination-bullet {
   }
 
   .work img {
-    background-color: #F0EAE4;
+    background-color: #f0eae4;
     width: auto;
     height: auto;
   }

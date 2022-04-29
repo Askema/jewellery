@@ -45,7 +45,7 @@
   font-size: 18px;
   line-height: 23px;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 22px;
@@ -60,7 +60,7 @@
 .ask .active {
   padding-bottom: 6px;
 
-  &:after {
+  &::after {
     transform: rotate(180deg);
   }
 }
@@ -99,7 +99,7 @@
     padding: 2.6rem 3rem 2.8rem;
   }
 
-  .ask button:after {
+  .ask button::after {
     right: 3.3rem;
   }
 
@@ -144,7 +144,7 @@
     padding: 18px 62px 18px 25px;
   }
 
-  .ask button:after {
+  .ask button::after {
     right: 23px;
     top: 1.6rem;
   }
@@ -166,6 +166,6 @@
   max-height: none;
 }
 
-.no-js .active:after {
+.no-js .active::after {
   display: none;
 }

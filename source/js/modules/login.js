@@ -73,4 +73,3 @@ login.addEventListener('keydown', function (event) {
     }
   }
 });
-

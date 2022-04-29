@@ -273,7 +273,6 @@
 // Menu
 
 @media (max-width: $tablet-width) {
-
   .nav__wrapper--absolute {
     position: fixed;
     height: 100%;
@@ -338,7 +337,7 @@
   }
 
   .nav__logo a {
-    top:12px;
+    top: 12px;
   }
 
   .nav__logo svg {

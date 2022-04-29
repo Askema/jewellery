@@ -1523,6 +1523,9 @@ button.swiper-pagination-bullet {
   overflow-x: hidden;
   background: -o-linear-gradient(transparent 115px, #F6F5F4 116px, transparent 116px);
   background: linear-gradient(transparent 115px, #F6F5F4 116px, transparent 116px);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .header__container {
@@ -1679,6 +1682,18 @@ button.swiper-pagination-bullet {
   border: 0;
 }
 
+.nav button:hover,
+.nav button:focus,
+.nav a:hover,
+.nav a:focus {
+  opacity: 0.7;
+}
+
+.nav button:active,
+.nav a:active {
+  opacity: 0.3;
+}
+
 .nav__search {
   position: relative;
   padding-top: 11px;
@@ -1812,6 +1827,7 @@ button.swiper-pagination-bullet {
   padding: 180px 30px;
   font-family: "Cormorant Garamont", "Arial", sans-serif;
   color: #ffffff;
+  background-color: #F0EAE4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-desktop.jpg");
   background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop.jpg");
   background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop.jpg");
@@ -1865,6 +1881,9 @@ button.swiper-pagination-bullet {
   line-height: 20.8px;
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .footer__container {
@@ -1883,6 +1902,21 @@ button.swiper-pagination-bullet {
 
 .footer a {
   color: #ffffff;
+}
+
+.footer input:hover,
+.footer input:focus,
+.footer button:hover,
+.footer button:focus,
+.footer a:hover,
+.footer a:focus {
+  opacity: 0.7;
+}
+
+.footer input:active,
+.footer button:active,
+.footer a:active {
+  opacity: 0.3;
 }
 
 .subscription {
@@ -2130,6 +2164,10 @@ button.swiper-pagination-bullet {
   margin-top: 7.3rem;
 }
 
+.blog__image {
+  background-color: #F0EAE4;
+}
+
 .blog h2 {
   font-family: "Cormorant Garamont", "Arial", sans-serif;
   font-weight: 700;
@@ -2361,12 +2399,11 @@ button.swiper-pagination-bullet {
   transition: 0.3s;
 }
 
-.active {
-  background-color: #ffffff;
-  padding-bottom: 0.6rem;
+.ask .active {
+  padding-bottom: 6px;
 }
 
-.active:after {
+.ask .active:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -2380,6 +2417,7 @@ button.swiper-pagination-bullet {
 }
 
 .ask__panel--open {
+  margin-bottom: -12px;
   max-height: none;
 }
 
@@ -2551,6 +2589,15 @@ button.swiper-pagination-bullet {
 .products__head {
   width: 100%;
   display: none;
+}
+
+.products button:hover,
+.products button:focus {
+  opacity: 0.7;
+}
+
+.products button:active {
+  opacity: 0.3;
 }
 
 .products__wrapper {
@@ -2865,12 +2912,18 @@ button.swiper-pagination-bullet {
   background-color: #A87B62;
 }
 
-.filter__buttons button:hover,
-.filter__buttons button:focus {
+.filter button:hover,
+.filter button:focus,
+.filter a:hover,
+.filter a:focus,
+.filter input:hover,
+.filter input:focus {
   opacity: 0.7;
 }
 
-.filter__buttons button:active {
+.filter button:active,
+.filter a:active,
+.filter input:active {
   opacity: 0.3;
 }
 
@@ -2895,6 +2948,12 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
 .main--catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2908,6 +2967,14 @@ button.swiper-pagination-bullet {
 
 .body {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
 }
 
 .body--overlay {
@@ -3008,7 +3075,8 @@ button.swiper-pagination-bullet {
   padding: 9px 9px 9px 0;
 }
 
-.login input:hover {
+.login input:hover,
+.login input:focus {
   background: #ffffff;
 }
 
@@ -3181,11 +3249,6 @@ button.swiper-pagination-bullet {
     color: transparent;
   }
 
-  .nav__search button {
-    top: 14px;
-    left: 2px;
-  }
-
   .nav__search svg {
     width: 25px;
     fill: #ffffff;
@@ -3306,6 +3369,11 @@ button.swiper-pagination-bullet {
     stroke: #1D1613;
   }
 
+  .nav__search button {
+    top: 14px;
+    left: 2px;
+  }
+
   .nav__user--close path {
     stroke: #1D1613;
   }
@@ -3346,11 +3414,11 @@ button.swiper-pagination-bullet {
   }
 
   .footer__container {
-    padding: 60px 45px;
+    padding: 20px 45px;
   }
 
   .subscription form {
-    width: 80%;
+    width: 84%;
   }
 
   .subscription input {
@@ -3379,12 +3447,23 @@ button.swiper-pagination-bullet {
     transform: scale(1.4);
   }
 
+  .slider svg {
+    width: 100%;
+    height: 100%;
+  }
+
   .slider button:first-of-type {
-    left: 49px;
+    top: 27px;
+    left: 42px;
+    width: 40px;
+    height: 50px;
   }
 
   .slider button:last-of-type {
-    right: 48px;
+    top: 23px;
+    right: 36px;
+    width: 51px;
+    height: 57px;
   }
 
   .slider {
@@ -3441,6 +3520,7 @@ button.swiper-pagination-bullet {
 
   .blog {
     padding: 0 45px;
+    margin-top: 68px;
   }
 
   .blog__wrapper {
@@ -3448,6 +3528,12 @@ button.swiper-pagination-bullet {
     grid-template-columns: 1fr;
     -ms-grid-rows: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px;
+    row-gap: 49px;
+  }
+
+  .blog h3 {
+    padding-left: 83px;
+    padding-right: 83px;
   }
 
   .blog__event--trends .blog__image {
@@ -3458,6 +3544,10 @@ button.swiper-pagination-bullet {
 
   .blog__event--trends .blog__description {
     position: static;
+  }
+
+  .blog__event--trends p {
+    margin-top: 81px;
   }
 
   .blog__event--care {
@@ -3530,7 +3620,14 @@ button.swiper-pagination-bullet {
   }
 
   .work {
+    margin-top: 81px;
+    margin-bottom: 80px;
     padding: 0 45px;
+  }
+
+  .work h2 {
+    letter-spacing: 1px;
+    margin-bottom: -11px;
   }
 
   .work__wrapper {
@@ -3780,6 +3877,11 @@ button.swiper-pagination-bullet {
     top: 38px;
   }
 
+  .nav__search button {
+    top: 14px;
+    left: 2px;
+  }
+
   .nav__user a:last-of-type {
     right: 14px;
     top: 38px;
@@ -3795,6 +3897,22 @@ button.swiper-pagination-bullet {
 
   .nav__logo--close {
     padding: 45.5px 0;
+  }
+
+  .intro {
+    padding: 185px 38px 194px;
+  }
+
+  .intro h1 {
+    font-size: 38px;
+    letter-spacing: 0.03em;
+    margin-right: 0;
+  }
+
+  .intro small {
+    margin-right: 0;
+    font-size: 34px;
+    line-height: 30.4px;
   }
 
   .intro--catalog {
@@ -3891,7 +4009,7 @@ button.swiper-pagination-bullet {
   }
 
   .image-slider {
-    width: 94%;
+    width: 90%;
     margin-top: 2.6rem;
     min-height: 285px;
   }
@@ -3905,13 +4023,32 @@ button.swiper-pagination-bullet {
     margin-top: 2rem;
   }
 
+  .blog__event--trends .blog__description {
+    min-height: 251px;
+  }
+
   .blog {
+    margin-top: 36px;
     padding: 0 15px;
   }
 
+  .blog h3 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .blog__wrapper {
-    -ms-grid-rows: 580px 580px 580px;
-    grid-template-rows: 580px 580px 580px;
+    -ms-grid-rows: 510px 510px 510px;
+    grid-template-rows: 510px 510px 510px;
+    row-gap: 40px;
+  }
+
+  .blog__description {
+    min-height: 255px;
+  }
+
+  .blog p {
+    margin-top: 41px;
   }
 
   .blog__event {
@@ -3927,15 +4064,27 @@ button.swiper-pagination-bullet {
     order: 2;
   }
 
+  .blog__event--trends p {
+    margin-top: 60px;
+  }
+
   .ask {
     min-width: 290px;
     padding: 0 15px;
-    margin-top: 3.3rem;
+    margin-top: 62px;
+  }
+
+  .ask .active {
+    padding-bottom: 17px;
   }
 
   .ask__wrapper {
     max-width: 100%;
     min-width: 290px;
+  }
+
+  .ask__panel--open {
+    margin-bottom: 7px;
   }
 
   .ask h2 {
@@ -3945,11 +4094,11 @@ button.swiper-pagination-bullet {
   .ask button {
     font-size: 16px;
     line-height: 22px;
-    padding: 1rem 5.1rem 1rem 1.5rem;
+    padding: 18px 62px 18px 25px;
   }
 
   .ask button:after {
-    right: 1.7rem;
+    right: 23px;
     top: 1.6rem;
   }
 
@@ -3959,11 +4108,13 @@ button.swiper-pagination-bullet {
     padding-left: 0.4rem;
     padding-right: 2.5rem;
     margin-top: 0;
-    margin-bottom: 1.4rem;
+    margin-bottom: 11px;
   }
 
   .work {
+    margin-top: 63px;
     padding: 0 15px;
+    margin-bottom: 122px;
   }
 
   .work__wrapper {
@@ -3982,6 +4133,7 @@ button.swiper-pagination-bullet {
   }
 
   .work img {
+    background-color: #F0EAE4;
     width: auto;
     height: auto;
   }

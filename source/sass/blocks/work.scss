@@ -99,7 +99,14 @@
 
 @media (max-width: $tablet-width) {
   .work {
+    margin-top: 81px;
+    margin-bottom: 80px;
     padding: 0 45px;
+  }
+
+  .work h2 {
+    letter-spacing: 1px;
+    margin-bottom: -11px;
   }
 
   .work__wrapper {
@@ -109,7 +116,9 @@
 
 @media (max-width: $mobile-width) {
   .work {
+    margin-top: 63px;
     padding: 0 15px;
+    margin-bottom: 122px;
   }
 
   .work__wrapper {
@@ -124,6 +133,7 @@
   }
 
   .work img {
+    background-color: $color-desert-storm;
     width: auto;
     height: auto;
   }

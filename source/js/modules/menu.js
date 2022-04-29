@@ -2,7 +2,7 @@ const nav = document.querySelector('.nav__wrapper');
 const navUser = nav.querySelector('.nav__user');
 const navLogo = nav.querySelector('.nav__logo');
 const menuButton = nav.querySelector('button');
-
+const body = document.querySelector('.body');
 
 if (!nav.classList.contains('nav__wrapper--close')) {
   nav.classList.add('nav__wrapper--close');
@@ -21,6 +21,7 @@ const openMenu = function () {
   nav.classList.toggle('nav__wrapper--absolute');
   navUser.classList.toggle('nav__user--close');
   navLogo.classList.toggle('nav__logo--close');
+  body.classList.toggle('body--overlay');
 };
 
 if (menuButton) {

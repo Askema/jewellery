@@ -7,6 +7,10 @@
   margin-top: 7.3rem;
 }
 
+.blog__image {
+  background-color: $color-desert-storm;
+}
+
 .blog h2 {
   font-family: $ff-cormorant;
   font-weight: 700;
@@ -159,11 +163,18 @@
 @media (max-width: $tablet-width) {
   .blog {
     padding: 0 45px;
+    margin-top: 68px;
   }
 
   .blog__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 300px 300px 300px;
+    row-gap: 49px;
+  }
+
+  .blog h3 {
+    padding-left: 83px;
+    padding-right: 83px;
   }
 
   .blog__event--trends .blog__image {
@@ -172,6 +183,10 @@
 
   .blog__event--trends .blog__description {
     position: static;
+  }
+
+  .blog__event--trends p {
+    margin-top: 81px;
   }
 
   .blog__event--care {
@@ -208,12 +223,32 @@
 }
 
 @media (max-width: $mobile-width) {
+
+  .blog__event--trends .blog__description {
+    min-height: 251px;
+  }
+
   .blog {
+    margin-top: 36px;
     padding: 0 15px;
   }
 
+  .blog h3 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .blog__wrapper {
-    grid-template-rows: 580px 580px 580px;
+    grid-template-rows: 510px 510px 510px;
+    row-gap: 40px;
+  }
+
+  .blog__description {
+    min-height: 255px;
+  }
+
+  .blog p {
+    margin-top: 41px;
   }
 
   .blog__event {
@@ -222,5 +257,9 @@
 
   .blog__event--crystals .blog__description--crystals {
     order: 2;
+  }
+
+  .blog__event--trends p {
+    margin-top: 60px;
   }
 }

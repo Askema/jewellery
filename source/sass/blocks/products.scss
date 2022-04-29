@@ -11,6 +11,18 @@
   display: none;
 }
 
+.products button {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
 .products__wrapper {
   display: flex;
   justify-content: space-between;

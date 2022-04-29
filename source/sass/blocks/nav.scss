@@ -44,6 +44,18 @@
   }
 }
 
+.nav button,
+.nav a {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .nav path {
   @media (max-width: $tablet-width) {
     stroke: $color-default-white;
@@ -99,11 +111,6 @@
         padding: 0 15px;
         color: transparent;
       }
-    }
-
-    & button {
-      top: 14px;
-      left: 2px;
     }
 
     & svg {
@@ -289,6 +296,11 @@
     }
   }
 
+  .nav__search button {
+    top: 14px;
+    left: 2px;
+  }
+
   .nav__user--close {
     & path {
       stroke: $color-wood-bark;
@@ -313,6 +325,11 @@
   .nav__wrapper button {
     left: 10px;
     top: 38px;
+  }
+
+  .nav__search button {
+    top: 14px;
+    left: 2px;
   }
 
   .nav__user a:last-of-type {

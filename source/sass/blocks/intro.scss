@@ -2,6 +2,7 @@
   padding: 180px 30px;
   font-family: $ff-cormorant;
   color: $color-default-white;
+  background-color: $color-desert-storm;
   background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -81,6 +82,23 @@
 }
 
 @media (max-width: $mobile-width) {
+  .intro {
+    padding: 185px 38px 194px;
+
+    & h1 {
+      font-size: 38px;
+      letter-spacing: 0.03em;
+      margin-right: 0;
+    }
+
+    & small {
+      margin-right: 0;
+      font-size: 34px;
+      line-height: 30.4px;
+    }
+  }
+
+
   .intro--catalog {
     padding: 82px 15px;
 

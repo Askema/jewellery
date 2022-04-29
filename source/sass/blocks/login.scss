@@ -87,7 +87,8 @@
   padding: 9px 9px 9px 0;
 }
 
-.login input:hover {
+.login input:hover,
+.login input:focus {
   background: $color-default-white;
 }
 

@@ -175,7 +175,9 @@
   background-color: $color-medium-wood;
 }
 
-.filter__buttons button {
+.filter button,
+.filter a,
+.filter input {
   &:hover,
   &:focus {
     opacity: 0.7;

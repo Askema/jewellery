@@ -265,6 +265,9 @@
       <div class="blog__event blog__event--care">
         <div class="blog__image">
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog1-tablet.webp 1x, img/blog1-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
             <source type="image/webp"
                     srcset="img/blog1-desktop.webp 1x, img/blog1-desktop@2x.webp 2x">
             <!-- 1x: 285px; 2x: 570px -->
@@ -280,6 +283,9 @@
       <div class="blog__event blog__event--crystals">
         <div class="blog__image">
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog2-tablet.webp 1x, img/blog2-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
             <source type="image/webp"
                     srcset="img/blog2-desktop.webp 1x, img/blog2-desktop@2x.webp 2x">
             <!-- 1x: 285px; 2x: 570px -->
@@ -295,6 +301,9 @@
       <div class="blog__event blog__event--trends">
         <div class="blog__image">
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog3-tablet.webp 1x, img/blog3-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
             <source type="image/webp"
                     srcset="img/blog3-desktop.webp 1x, img/blog3-desktop@2x.webp 2x">
             <!-- 1x: 570px; 2x: 1140px -->
@@ -484,8 +493,8 @@
   <div class="login__wrapper">
     <div class="login__form">
       <h2>Log In</h2>
-      <form>
-        <input type="email" name="email" placeholder="Your E-mail" required>
+      <form method="get">
+        <input type="email" name="email" placeholder="Your E-mail" required="">
         <input type="password" name="password" placeholder="Password" required>
         <a href="#">Forgot your password?</a>
         <button type="submit">Log In</button>

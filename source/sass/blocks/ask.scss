@@ -57,9 +57,8 @@
   }
 }
 
-.active {
-  background-color: $color-default-white;
-  padding-bottom: 0.6rem;
+.ask .active {
+  padding-bottom: 6px;
 
   &:after {
     transform: rotate(180deg);
@@ -73,6 +72,7 @@
   overflow: hidden;
 
   &--open {
+    margin-bottom: -12px;
     max-height: none;
   }
 }
@@ -118,12 +118,20 @@
   .ask {
     min-width: 290px;
     padding: 0 15px;
-    margin-top: 3.3rem;
+    margin-top: 62px;
+  }
+
+  .ask .active {
+    padding-bottom: 17px;
   }
 
   .ask__wrapper {
     max-width: 100%;
     min-width: 290px;
+  }
+
+  .ask__panel--open {
+    margin-bottom: 7px;
   }
 
   .ask h2 {
@@ -133,11 +141,11 @@
   .ask button {
     font-size: 16px;
     line-height: 22px;
-    padding: 1rem 5.1rem 1rem 1.5rem;
+    padding: 18px 62px 18px 25px;
   }
 
   .ask button:after {
-    right: 1.7rem;
+    right: 23px;
     top: 1.6rem;
   }
 
@@ -148,7 +156,7 @@
     padding-left: 0.4rem;
     padding-right: 2.5rem;
     margin-top: 0;
-    margin-bottom: 1.4rem;
+    margin-bottom: 11px;
   }
 }
 

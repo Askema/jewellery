@@ -15,7 +15,7 @@ new Swiper('.swiper', {
       loopFillGroupWithBlank: true,
     },
 
-    1023: {
+    1024: {
       slidesPerView: 4,
       spaceBetween: 20,
       slidesPerGroup: 4,

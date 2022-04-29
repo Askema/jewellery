@@ -1,11 +1,11 @@
 const filter = document.querySelector('.filter');
-const closeButton = filter.querySelector('button');
+const closeButton = document.querySelector('.filter button');
 const openButton = document.querySelector('.products button');
 
 const body = document.querySelector('.body');
 const overlay = document.querySelector('.overlay');
 
-const closeModal = function() {
+const closeModal = function () {
   if (filter.classList.contains('filter--open')) {
     filter.classList.remove('filter--open');
     overlay.classList.remove('overlay--active');
@@ -13,7 +13,7 @@ const closeModal = function() {
   }
 };
 
-const openModal = function() {
+const openModal = function () {
   if (!filter.classList.contains('filter--open')) {
     filter.classList.add('filter--open');
     overlay.classList.add('overlay--active');

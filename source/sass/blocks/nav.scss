@@ -44,6 +44,18 @@
   }
 }
 
+.nav button,
+.nav a {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .nav path {
   @media (max-width: $tablet-width) {
     stroke: $color-default-white;
@@ -99,11 +111,6 @@
         padding: 0 15px;
         color: transparent;
       }
-    }
-
-    & button {
-      top: 14px;
-      left: 2px;
     }
 
     & svg {
@@ -266,7 +273,6 @@
 // Menu
 
 @media (max-width: $tablet-width) {
-
   .nav__wrapper--absolute {
     position: fixed;
     height: 100%;
@@ -287,6 +293,11 @@
     & path {
       stroke: $color-wood-bark;
     }
+  }
+
+  .nav__search button {
+    top: 14px;
+    left: 2px;
   }
 
   .nav__user--close {
@@ -315,13 +326,18 @@
     top: 38px;
   }
 
+  .nav__search button {
+    top: 14px;
+    left: 2px;
+  }
+
   .nav__user a:last-of-type {
     right: 14px;
     top: 38px;
   }
 
   .nav__logo a {
-    top:12px;
+    top: 12px;
   }
 
   .nav__logo svg {

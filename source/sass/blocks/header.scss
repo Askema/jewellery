@@ -2,6 +2,7 @@
   text-align: center;
   overflow-x: hidden;
   background: linear-gradient(transparent 115px, $color-seashell 116px, transparent 116px);
+  flex: 0 0 auto;
 
   @media (max-width: $tablet-width) {
     background-color: $color-medium-wood;

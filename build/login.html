@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" CONTENT="Jewellery">
+  <title>Jewellery</title>
+  <link href="css/style.min.css" rel="stylesheet preload" as="style">
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body class="body no-js">
+<section class="login login--open">
+  <div class="login__intro">
+    <button type="button" aria-label="close">
+      <svg width="14" height="14" viewBox="0 0 14 14">
+        <use xlink:href="img/sprite_auto.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="login__wrapper">
+    <div class="login__form">
+      <h2>Log In</h2>
+      <form>
+        <input type="email" name="email" placeholder="Your E-mail" required tabindex="-1">
+        <input type="password" name="password" placeholder="Password" required>
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <a href="#">Don’t have an account?<span>Sign up</span></a>
+  </div>
+</section>
+<div class="overlay"></div>
+<a href="index.html">На главную</a>
+
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

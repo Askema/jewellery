@@ -15,7 +15,7 @@
   <link rel="preload" href="fonts/cormorant-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body>
+<body class="body no-js">
 <header class="header">
   <div class="header__container">
     <nav class="nav">
@@ -265,6 +265,9 @@
       <div class="blog__event blog__event--care">
         <div class="blog__image">
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog1-tablet.webp 1x, img/blog1-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
             <source type="image/webp"
                     srcset="img/blog1-desktop.webp 1x, img/blog1-desktop@2x.webp 2x">
             <!-- 1x: 285px; 2x: 570px -->
@@ -280,6 +283,9 @@
       <div class="blog__event blog__event--crystals">
         <div class="blog__image">
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog2-tablet.webp 1x, img/blog2-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
             <source type="image/webp"
                     srcset="img/blog2-desktop.webp 1x, img/blog2-desktop@2x.webp 2x">
             <!-- 1x: 285px; 2x: 570px -->
@@ -295,6 +301,9 @@
       <div class="blog__event blog__event--trends">
         <div class="blog__image">
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog3-tablet.webp 1x, img/blog3-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
             <source type="image/webp"
                     srcset="img/blog3-desktop.webp 1x, img/blog3-desktop@2x.webp 2x">
             <!-- 1x: 570px; 2x: 1140px -->
@@ -472,33 +481,29 @@
 </footer>
 
 <!-- Модалки -->
-<div class="modal modal--preload" data-modal="feedback">
-  <div class="modal__wrapper">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__content">
-      <p class="modal__description">Обычная модалка</p>
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-        <svg width="15" height="15">
-          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
 
-<div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-  <div class="modal__wrapper">
-    <div class="modal__overlay" data-close-modal></div>
-    <div class="modal__content">
-      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-        <svg width="15" height="15">
-          <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-        </svg>
-      </button>
+<div class="login">
+  <div class="login__intro">
+    <button type="button" aria-label="close">
+      <svg width="14" height="14" viewBox="0 0 14 14">
+        <use xlink:href="img/sprite_auto.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="login__wrapper">
+    <div class="login__form">
+      <h2>Log In</h2>
+      <form method="get">
+        <input type="email" name="email" placeholder="Your E-mail" required="">
+        <input type="password" name="password" placeholder="Password" required>
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Log In</button>
+      </form>
     </div>
+    <a href="#">Don’t have an account?<span>Sign up</span></a>
   </div>
 </div>
+<div class="overlay"></div>
 <script src="js/vendor.min.js" type="module"></script>
 <script src="js/main.min.js"></script>
 </body>

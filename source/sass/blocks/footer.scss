@@ -12,9 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1170px;
+  max-width: 1190px;
   margin: 0 auto;
-  padding: 62px 0 100px;
+  padding: 62px 10px 100px;
 
   @media (max-width: $tablet-width) {
     padding: 20px 45px;

@@ -2989,9 +2989,8 @@ button.swiper-pagination-bullet {
   max-width: 430px;
   min-width: 270px;
   min-height: 470px;
-  max-height: 586px;
   position: absolute;
-  top: 2.5%;
+  top: 4%;
   left: 0;
   right: 0;
   z-index: 11;
@@ -3064,15 +3063,12 @@ button.swiper-pagination-bullet {
   line-height: 21px;
   border-bottom: 1px solid #1d1613;
   padding: 9px 9px 9px 0;
+  width: 100%;
 }
 
 .login input:hover,
 .login input:focus {
   background: #ffffff;
-}
-
-.login input:last-of-type {
-  margin-bottom: 5px;
 }
 
 .login button[type="submit"] {
@@ -3101,6 +3097,7 @@ button.swiper-pagination-bullet {
 }
 
 .login__form a {
+  margin-top: -20px;
   margin-right: 0;
   color: #9b9997;
   font-weight: 500;

@@ -3111,6 +3111,19 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+.sites a {
+  color: #000000;
+}
+
+.sites a:hover,
+.sites a:focus {
+  opacity: 0.7;
+}
+
+.sites a:active {
+  opacity: 0.3;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {

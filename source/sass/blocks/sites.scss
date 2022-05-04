@@ -1,0 +1,12 @@
+.sites a {
+  color: $color-default-black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

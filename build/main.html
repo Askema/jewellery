@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" CONTENT="Jewellery">
+  <title>Jewellery</title>
+  <link href="css/style.min.css" rel="stylesheet preload" as="style">
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body class="body no-js">
+<header class="header">
+  <div class="header__container">
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <button type="button">
+          <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H25M0 9H25M0 17H25" stroke="#1D1613" stroke-width="2"/>
+          </svg>
+        </button>
+        <div class="nav__search nav__search--open">
+          <form method="get">
+            <input type="search" name="search" placeholder="Type here to search">
+            <button type="submit">
+              <svg width="14" height="14" viewBox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="nav__logo">
+          <a>
+            <svg width="66" height="66" viewBox="0 0 66 66">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class=" nav__user nav__user--open">
+          <a href="login.html">Login</a>
+          <a href="#">
+            <span>Cart <span>0</span></span>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 5C14 6.06087 13.5786 7.07828 12.8284 7.82843C12.0783 8.57857 11.0609 9 10 9C8.93913 9 7.92172 8.57857 7.17157 7.82843C6.42143 7.07828 6 6.06087 6 5M1 1H19V17H1V1Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <ul class="nav__list nav__list--catalog">
+          <li>
+            <a href="#">What’s new</a>
+          </li>
+          <li>
+            <a href="#">Chokers</a>
+          </li>
+          <li>
+            <a href="#">Necklaces</a>
+          </li>
+          <li>
+            <a href="#">Rings</a>
+          </li>
+          <li>
+            <a href="#">Earrings</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--tablet">
+          <li>
+            <a href="#">About CH</a>
+          </li>
+          <li>
+            <a href="#">Stores & Hours</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <section class="header__intro intro">
+    <h1>PERFECTION</h1>
+    <small>made to be yours</small>
+  </section>
+</header>
+<main class="main">
+  <section class="slider">
+    <div class="slider__head">
+      <h2 class="slider-title">New In</h2>
+      <a href="catalog.html">Shop Now</a>
+      <button class="swiper-button-prev" type="button">
+        <svg width="30" height="11" viewBox="0 0 30 11" fill="none">
+          <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
+        </svg>
+      </button>
+      <button class="swiper-button-next" type="button">
+        <svg width="30" height="11" viewBox="0 0 30 11" fill="none">
+          <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
+        </svg>
+      </button>
+    </div>
+    <div class="image-slider swiper">
+      <div class="image-slider__wrapper swiper-wrapper">
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/purple-gemstone-desktop.webp 1x, img/purple-gemstone-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/purple-gemstone-desktop.jpg" width="270" height="284" alt="Ожерелье">
+            </picture>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 145</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/choker-desktop.webp 1x, img/choker-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/choker-desktop.jpg" width="270" height="284" alt="Чокер">
+            </picture>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/dainty-gold-desktop.webp 1x, img/dainty-gold-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/dainty-gold-desktop.jpg" width="270" height="284" alt="Золотое ожерелье">
+            </picture>
+            <h3>Gold chain</h3>
+            <p>$ 215</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/galaxy-earrings-desktop.webp, img/galaxy-earrings-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Галактические серьги">
+            </picture>
+            <h3>Galaxy earrings</h3>
+            <p>$ 95</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/purple-gemstone-desktop.webp 1x, img/purple-gemstone-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/purple-gemstone-desktop.jpg" width="270" height="284" alt="Ожерелье">
+            </picture>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 145</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/choker-desktop.webp 1x, img/choker-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/choker-desktop.jpg" width="270" height="284" alt="Чокер">
+            </picture>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/dainty-gold-desktop.webp 1x, img/dainty-gold-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/dainty-gold-desktop.jpg" width="270" height="284" alt="Золотое ожерелье">
+            </picture>
+            <h3>Gold chain</h3>
+            <p>$ 215</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/galaxy-earrings-desktop.webp, img/galaxy-earrings-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Галактические серьги">
+            </picture>
+            <h3>Galaxy earrings</h3>
+            <p>$ 95</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/purple-gemstone-desktop.webp 1x, img/purple-gemstone-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/purple-gemstone-desktop.jpg" width="270" height="284" alt="Ожерелье">
+            </picture>
+            <h3>Necklace with amethyst</h3>
+            <p>$ 145</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/choker-desktop.webp 1x, img/choker-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/choker-desktop.jpg" width="270" height="284" alt="Чокер">
+            </picture>
+            <h3>Layered сhoker</h3>
+            <p>$ 115</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/dainty-gold-desktop.webp 1x, img/dainty-gold-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/dainty-gold-desktop.jpg" width="270" height="284" alt="Золотое ожерелье">
+            </picture>
+            <h3>Gold chain</h3>
+            <p>$ 215</p>
+          </div>
+        </div>
+        <div class="image-slider__slide swiper-slide">
+          <div class="image-slider__image">
+            <picture>
+              <source type="image/webp"
+                      srcset="img/galaxy-earrings-desktop.webp, img/galaxy-earrings-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <img src="img/galaxy-earrings-desktop.jpg" width="270" height="284" alt="Галактические серьги">
+            </picture>
+            <h3>Galaxy earrings</h3>
+            <p>$ 95</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-pagination swiper-pagination">
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="blog__head">
+      <h2>Blog</h2>
+      <a href="#">Read All</a>
+    </div>
+    <div class="blog__wrapper">
+      <div class="blog__event blog__event--care">
+        <div class="blog__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog1-tablet.webp 1x, img/blog1-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
+            <source type="image/webp"
+                    srcset="img/blog1-desktop.webp 1x, img/blog1-desktop@2x.webp 2x">
+            <!-- 1x: 285px; 2x: 570px -->
+            <img src="img/blog1-desktop.jpg" width="285" height="300" alt="Кулоны">
+          </picture>
+        </div>
+        <div class="blog__description blog__description--care">
+          <p>September 30, 2019</p>
+          <h3>How to care for your jewellery</h3>
+          <a href="#">Read Article</a>
+        </div>
+      </div>
+      <div class="blog__event blog__event--crystals">
+        <div class="blog__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog2-tablet.webp 1x, img/blog2-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
+            <source type="image/webp"
+                    srcset="img/blog2-desktop.webp 1x, img/blog2-desktop@2x.webp 2x">
+            <!-- 1x: 285px; 2x: 570px -->
+            <img src="img/blog1-desktop.jpg" width="285" height="300" alt="Кристалы">
+          </picture>
+        </div>
+        <div class="blog__description blog__description--crystals">
+          <p>September 23, 2019</p>
+          <h3>Power of crystals</h3>
+          <a href="#">Read Article</a>
+        </div>
+      </div>
+      <div class="blog__event blog__event--trends">
+        <div class="blog__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/blog3-tablet.webp 1x, img/blog3-tablet@2x.webp 2x">
+            <!-- 1x: 339px; 2x: 678px -->
+            <source type="image/webp"
+                    srcset="img/blog3-desktop.webp 1x, img/blog3-desktop@2x.webp 2x">
+            <!-- 1x: 570px; 2x: 1140px -->
+            <img src="img/blog3-desktop.jpg" width="570" height="630" alt="Кольца">
+          </picture>
+        </div>
+        <div class="blog__description">
+          <p>September 16, 2019</p>
+          <h3>AW 19 trends</h3>
+          <a href="#">Read Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ask">
+    <h2>Frequently asked questions</h2>
+    <div class="ask__wrapper">
+      <div class="ask__container">
+        <button class="active" aria-label="Accordion Button">What materials are the jewellery made of?</button>
+        <div class="ask__panel">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </div>
+      </div>
+      <div class="ask__container">
+        <button class="active" aria-label="Accordion Button">Which countries do you deliver to?</button>
+        <div class="ask__panel">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </div>
+      </div>
+      <div class="ask__container">
+        <button class="active" aria-label="Accordion Button">What are the payment methods?</button>
+        <div class="ask__panel">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </div>
+      </div>
+      <div class="ask__container">
+        <button class="active" aria-label="Accordion Button">Can I return the jewellery if it didn’t fit me?</button>
+        <div class="ask__panel">
+          <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <h2>@Chjewellery</h2>
+    <a href="#">Follow Us</a>
+    <div class="work__wrapper">
+      <div class="work__block work__block--1">
+        <picture>
+          <source type="image/webp"
+                  srcset="img/work/work1-desktop.webp 1x, img/work/work1-desktop@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img src="img/work/work1-desktop.jpg" width="230" height="230" alt="Кольца">
+        </picture>
+      </div>
+      <div class="work__block work__block--2">
+        <picture>
+          <source type="image/webp"
+                  srcset="img/work/work2-desktop.webp 1x, img/work/work2-desktop@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img src="img/work/work2-desktop.jpg" width="230" height="150" alt="Кольца">
+        </picture>
+      </div>
+      <div class="work__block work__block--3">
+        <picture>
+          <source type="image/webp"
+                  srcset="img/work/work3-desktop.webp 1x, img/work/work3-desktop@2x.webp 2x">
+          <!-- 1x: 399px; 2x: 798px -->
+          <img src="img/work/work3-desktop.jpg" width="399" height="420" alt="Кольца">
+        </picture>
+      </div>
+      <div class="work__block work__block--4">
+        <picture>
+          <source type="image/webp"
+                  srcset="img/work/work4-desktop.webp 1x, img/work/work4-desktop@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img src="img/work/work4-desktop.jpg" width="230" height="230" alt="Кольца">
+        </picture>
+      </div>
+      <div class="work__block work__block--5">
+        <picture>
+          <source type="image/webp"
+                  srcset="img/work/work5-desktop.webp 1x, img/work/work5-desktop@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img src="img/work/work5-desktop.jpg" width="230" height="150" alt="Кольца">
+        </picture>
+      </div>
+      <div class="work__block work__block--6">
+        <picture>
+          <source type="image/webp"
+                  srcset="img/work/work6-desktop.webp 1x, img/work/work6-desktop@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img src="img/work/work6-desktop.jpg" width="230" height="230" alt="Кольца">
+        </picture>
+      </div>
+      <div class="work__block work__block--7">
+        <picture>
+          <source type="image/webp"
+                  srcset="img/work/work7-desktop.webp 1x, img/work/work7-desktop@2x.webp 2x">
+          <!-- 1x: 230px; 2x: 460px -->
+          <img src="img/work/work7-desktop.jpg" width="230" height="150" alt="Кольца">
+        </picture>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__container">
+    <section class="subscription">
+      <h2>The good stuff in your inbox </h2>
+      <p>News and updates from CH. No spam, we promise.</p>
+      <form method="post">
+        <input type="email" name="email" placeholder="Your E-mail">
+        <button type="submit">
+          Sign Up
+          <svg width="29" height="9" viewBox="0 0 29 9">
+            <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </form>
+    </section>
+    <div class="contacts">
+      <ul class="contacts__list contacts__company">
+        <li><a href="#">Ordering & Payment</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Returns & Exchanges</a></li>
+        <li><a href="#">Delivery</a></li>
+      </ul>
+      <ul class="contacts__list contacts__about">
+        <li><a href="#">About CH</a></li>
+        <li><a href="#">Stores & Hours</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="contacts__list contacts__social">
+        <li>
+          <a href="#">
+            <svg width="8" height="15" viewBox="0 0 8 15">
+              <use xlink:href="img/sprite_auto.svg#facebook"></use>
+            </svg>
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="15" height="15" viewBox="0 0 15 15">
+              <use xlink:href="img/sprite_auto.svg#instagram"></use>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="15" height="15" viewBox="0 0 15 15">
+              <use xlink:href="img/sprite_auto.svg#pinterest"></use>
+            </svg>
+            <span>Pinterest</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="15" height="13" viewBox="0 0 15 13">
+              <use xlink:href="img/sprite_auto.svg#twitter"></use>
+            </svg>
+            <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Модалки -->
+
+<div class="login">
+  <div class="login__intro">
+    <button type="button" aria-label="close">
+      <svg width="14" height="14" viewBox="0 0 14 14">
+        <use xlink:href="img/sprite_auto.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="login__wrapper">
+    <div class="login__form">
+      <h2>Log In</h2>
+      <form method="post" action="https://echo.htmlacademy.ru/">
+        <label>
+          <input type="email" name="email" placeholder="Your E-mail" required>
+          <span class="visually-hidden">Email</span>
+        </label>
+        <label>
+          <input type="password" name="password" placeholder="Password" required>
+          <span class="visually-hidden">Password</span>
+        </label>
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <a href="#">Don’t have an account?<span>Sign up</span></a>
+  </div>
+</div>
+<div class="overlay"></div>
+<script src="js/vendor.min.js" type="module"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

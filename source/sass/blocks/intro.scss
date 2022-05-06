@@ -122,6 +122,20 @@
 @media (max-width: $mobile-width) {
   .intro {
     padding: 193px 38px 185px;
+
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-mobile@2x.jpg");
+    }
+  }
+
+  .has-webp .intro {
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-mobile.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-mobile@2x.webp");
+    }
   }
 
   .intro h1 {
@@ -139,13 +153,30 @@
 
   .intro--catalog {
     padding: 82px 15px;
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-mobile@2x.jpg");
+    }
+  }
+
+  .has-webp .intro--catalog {
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-mobile.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-mobile@2x.webp");
+    }
   }
 
   .intro--catalog h1 {
+    letter-spacing: 0;
     margin-bottom: 0;
+    font-size: 34px;
+    line-height: 130%;
   }
 
   .intro--catalog small {
+    font-size: 22px;
     line-height: 27.6px;
   }
 }

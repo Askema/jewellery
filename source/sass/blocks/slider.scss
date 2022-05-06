@@ -57,7 +57,7 @@
 .slider {
   text-align: center;
   max-width: 1210px;
-  padding: 0 10px;
+  padding: 0 20px;
   min-width: 320px;
   margin: 0 auto;
   margin-top: 7.6rem;
@@ -139,10 +139,14 @@
   font-size: 16px;
   line-height: 130%;
   margin-bottom: 0;
-  margin-top: 1.1rem;
+  margin-top: 22px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 0.9rem;
+    margin-top: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 13px;
   }
 }
 
@@ -189,6 +193,7 @@
 
 @media (max-width: $tablet-width) {
   .slider {
+    padding: 0 10px;
     margin-top: 4.4rem;
     max-width: 100%;
     min-height: 100%;
@@ -196,7 +201,7 @@
 
   .image-slider {
     width: 92%;
-    margin-top: 3.5rem;
+    margin-top: 52px;
   }
 
   .image-slider__image img {

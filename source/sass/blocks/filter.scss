@@ -220,15 +220,27 @@
   }
 
   .filter--open {
-    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
     display: flex;
     z-index: 11;
-    position: absolute;
+    position: fixed;
     min-width: 280px;
     max-width: 462px;
     left: 0;
     top: 25px;
     width: 100%;
+  }
+
+  .filter--open .filter__wrapper {
+    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+    display: flex;
+    overflow-y: scroll;
+    height: 96vh;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   .filter__fieldset {

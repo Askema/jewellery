@@ -28,6 +28,7 @@
 
   @media (max-width: $mobile-width) {
     margin-top: 16px;
+    margin-bottom: 33px;
     padding-right: 40px;
   }
 }
@@ -86,6 +87,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    top: 7px;
     right: -10px;
   }
 }

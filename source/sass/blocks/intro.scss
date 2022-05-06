@@ -13,6 +13,17 @@
   }
 }
 
+.has-webp .intro {
+  background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-desktop.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (min-resolution: 2dppx) and (min-width: $tablet-width) {
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-desktop@2x.webp");
+  }
+}
+
 .intro h1 {
   font-size: 45px;
   font-weight: 700;
@@ -41,6 +52,17 @@
   }
 }
 
+.has-webp .intro--catalog {
+  background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/catalog/intro-catalog.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (min-resolution: 2dppx) and (min-width: $tablet-width) {
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/catalog/intro-catalog@2x.webp");
+  }
+}
+
 .intro--catalog h1 {
   font-size: 34px;
   line-height: 44.2px;
@@ -62,6 +84,14 @@
     }
   }
 
+  .has-webp .intro {
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-tablet@2x.webp");
+    }
+  }
+
   .intro h1,
   .intro small {
     margin-right: 15px;
@@ -72,6 +102,14 @@
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-tablet@2x.jpg");
+    }
+  }
+
+  .has-webp .intro--catalog {
+    background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient($color-main-mask, $color-main-mask), url("../img/intro-catalog-tablet@2x.webp");
     }
   }
 

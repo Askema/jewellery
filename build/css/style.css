@@ -1838,6 +1838,15 @@ button.swiper-pagination-bullet {
   background-size: cover;
 }
 
+.has-webp .intro {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-desktop.webp");
+  background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop.webp");
+  background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .intro h1 {
   font-size: 45px;
   font-weight: 700;
@@ -1859,6 +1868,15 @@ button.swiper-pagination-bullet {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/catalog/intro-catalog.jpg");
   background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog.jpg");
   background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.has-webp .intro--catalog {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/catalog/intro-catalog.webp");
+  background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog.webp");
+  background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1958,7 +1976,7 @@ button.swiper-pagination-bullet {
   border: 0;
   width: 500px;
   border-bottom: 1px solid #ffffff;
-  padding: 9px 0;
+  padding: 9px 120px 9px 0;
   color: #ffffff;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -3151,10 +3169,22 @@ button.swiper-pagination-bullet {
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop@2x.jpg");
   }
 
+  .has-webp .intro {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-desktop@2x.webp");
+    background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop@2x.webp");
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-desktop@2x.webp");
+  }
+
   .intro--catalog {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/catalog/intro-catalog@2x.jpg");
     background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog@2x.jpg");
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog@2x.jpg");
+  }
+
+  .has-webp .intro--catalog {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/catalog/intro-catalog@2x.webp");
+    background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog@2x.webp");
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/catalog/intro-catalog@2x.webp");
   }
 }
 
@@ -3404,6 +3434,12 @@ button.swiper-pagination-bullet {
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-tablet.jpg");
   }
 
+  .has-webp .intro {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-tablet.webp");
+    background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-tablet.webp");
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-tablet.webp");
+  }
+
   .intro h1,
   .intro small {
     margin-right: 15px;
@@ -3413,6 +3449,12 @@ button.swiper-pagination-bullet {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-catalog-tablet.jpg");
     background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet.jpg");
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet.jpg");
+  }
+
+  .has-webp .intro--catalog {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-catalog-tablet.webp");
+    background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet.webp");
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet.webp");
   }
 
   .intro--catalog h1,
@@ -3851,10 +3893,22 @@ button.swiper-pagination-bullet {
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-tablet@2x.jpg");
   }
 
+  .has-webp .intro {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-tablet@2x.webp");
+    background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-tablet@2x.webp");
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-tablet@2x.webp");
+  }
+
   .intro--catalog {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-catalog-tablet@2x.jpg");
     background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet@2x.jpg");
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet@2x.jpg");
+  }
+
+  .has-webp .intro--catalog {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-catalog-tablet@2x.webp");
+    background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet@2x.webp");
+    background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-catalog-tablet@2x.webp");
   }
 }
 

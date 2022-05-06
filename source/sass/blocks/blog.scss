@@ -222,6 +222,10 @@
     padding: 0 15px;
   }
 
+  .blog h2 {
+    margin-top: 39px;
+  }
+
   .blog h3 {
     padding-left: 60px;
     padding-right: 60px;
@@ -230,6 +234,7 @@
   .blog__wrapper {
     grid-template-rows: 510px 510px 510px;
     row-gap: 40px;
+    margin-top: 57px;
   }
 
   .blog__description {

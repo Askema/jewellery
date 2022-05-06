@@ -228,13 +228,22 @@
     min-height: 285px;
   }
 
+  .swiper-pagination-of {
+    margin: 0 6px;
+    font-family: $ff-poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
   .image-slider__image img {
     min-width: 130px;
     min-height: 136px;
   }
 
   .image-pagination {
-    margin-top: 2rem;
+    margin-top: 36px;
+    position: relative;
   }
 }
 

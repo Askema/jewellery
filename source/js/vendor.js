@@ -6,6 +6,13 @@ new Swiper('.swiper', {
 
   direction: 'horizontal',
   loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: (index, className) => {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
 
   breakpoints: {
     320: {
@@ -13,6 +20,31 @@ new Swiper('.swiper', {
       spaceBetween: 20,
       slidesPerGroup: 2,
       loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+        renderFraction: (currentClass, totalClass, index, total) => {
+          return '<span class="' + currentClass + '"> ' + index + ' </span>' +
+            '<span class="swiper-pagination-of"> ' + 'of' + ' </span>' +
+            '<span class="' + totalClass + '"> ' + total + ' </span>';
+        },
+      },
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesPerGroup: 2,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'bullets',
+        renderBullet: (index, className) => {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
     },
 
     1024: {
@@ -24,13 +56,6 @@ new Swiper('.swiper', {
     },
   },
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    renderBullet: (index, className) => {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
-    },
-  },
 
   navigation: {
     nextEl: '.swiper-button-next',

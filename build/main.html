@@ -7,13 +7,13 @@
   <meta name="description" CONTENT="Jewellery">
   <title>Jewellery</title>
   <link href="css/style.min.css" rel="stylesheet preload" as="style">
-  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/cormorant-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/cormorant-italic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/cormorant-semibold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/cormorant-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="body no-js">
 <header class="header">
@@ -85,7 +85,7 @@
       </div>
     </nav>
   </div>
-  <section class="header__intro intro">
+  <section class="header__intro intro" data-bg="/img/intro-desktop.jpg" data-bg-webp="/img/intro-desktop.webp">
     <h1>PERFECTION</h1>
     <small>made to be yours</small>
   </section>
@@ -421,7 +421,10 @@
       <h2>The good stuff in your inbox </h2>
       <p>News and updates from CH. No spam, we promise.</p>
       <form method="post">
-        <input type="email" name="email" placeholder="Your E-mail">
+        <label>
+          <span class="visually-hidden">Email</span>
+          <input type="email" name="email" placeholder="Your E-mail" required>
+        </label>
         <button type="submit">
           Sign Up
           <svg width="29" height="9" viewBox="0 0 29 9">

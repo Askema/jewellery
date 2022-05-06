@@ -8,6 +8,7 @@
 }
 
 .work h2 {
+  letter-spacing: 1px;
   font-family: $ff-cormorant;
   font-weight: 700;
   font-size: 34px;
@@ -99,13 +100,12 @@
 
 @media (max-width: $tablet-width) {
   .work {
-    margin-top: 81px;
+    margin-top: 75px;
     margin-bottom: 80px;
     padding: 0 45px;
   }
 
   .work h2 {
-    letter-spacing: 1px;
     margin-bottom: -11px;
   }
 

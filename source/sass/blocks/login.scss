@@ -38,6 +38,7 @@
   height: 14px;
   top: 19px;
   right: 26px;
+  cursor: pointer;
 }
 
 .login button,
@@ -115,6 +116,7 @@
 
 .login__form a {
   margin-top: -20px;
+  margin-left: auto;
   margin-right: 0;
   color: $color-zorba;
   font-weight: 500;

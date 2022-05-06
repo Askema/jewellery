@@ -4,6 +4,7 @@ import './modules/menu';
 import './modules/accordion';
 import './modules/filter';
 import './modules/login';
+import './modules/webp';
 
 const body = document.querySelector('.body');
 

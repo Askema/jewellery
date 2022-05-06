@@ -17,7 +17,7 @@ new Swiper('.swiper', {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 25,
       slidesPerGroup: 2,
       loopFillGroupWithBlank: true,
       pagination: {
@@ -49,7 +49,7 @@ new Swiper('.swiper', {
 
     1024: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 25,
       slidesPerGroup: 4,
       loopFillGroupWithBlank: true,
       allowTouchMove: false,

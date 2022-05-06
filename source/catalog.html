@@ -7,13 +7,13 @@
   <meta name="description" CONTENT="Jewellery">
   <title>Jewellery</title>
   <link href="css/style.min.css" rel="stylesheet preload" as="style">
-  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/cormorant-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/cormorant-italic.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/cormorant-semibold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/cormorant-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="body no-js">
 <header class="header">
@@ -36,7 +36,7 @@
           </form>
         </div>
         <div class="nav__logo">
-          <a href="index.html">
+          <a href="main.html">
             <span class="visually-hidden">Логотип</span>
             <svg width="66" height="66" viewBox="0 0 66 66">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -92,78 +92,82 @@
 </header>
 <main class="main main--catalog">
   <div class="filter">
-    <form>
-      <div class="filter__close">
-        <button type="button" aria-label="close">
-          <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z" fill="white"/>
-          </svg>
-        </button>
-      </div>
-      <div class="filter__fieldset filter__fieldset--active">
-        <button type="button">Product</button>
-        <div class="filter__item">
-          <label>
-            <input type="checkbox" name="check" checked>
-            <span>Necklaces</span>
-          </label>
-          <label>
-            <input type="checkbox" name="check" checked>
-            <span>Chokers</span>
-          </label>
-          <label>
-            <input type="checkbox" name="check">
-            <span>Rings</span>
-          </label>
-          <label>
-            <input type="checkbox" name="check" checked>
-            <span>Earrings</span>
-          </label>
+    <div class="filter__wrapper">
+      <form>
+        <div class="filter__close">
+          <button type="button" aria-label="close">
+            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z"
+                fill="white"/>
+            </svg>
+          </button>
         </div>
-      </div>
-      <div class="filter__fieldset filter__fieldset--active">
-        <button type="button" aria-label="Accordion Button">Material</button>
-        <div class="filter__item">
-          <label>
-            <input type="checkbox" name="check" checked>
-            <span>Gold</span>
-          </label>
-          <label>
-            <input type="checkbox" name="check" checked>
-            <span>Silver</span>
-          </label>
-        </div>
-      </div>
-      <div class="filter__fieldset filter__fieldset--active">
-        <button type="button" aria-label="Accordion Button">Collection</button>
-        <div class="filter__item">
-          <label>
-            <input type="checkbox" name="check" checked>
-            <span>Pink flamingo</span>
-          </label>
-          <label>
-            <input type="checkbox" name="check" checked>
-            <span>Dreams</span>
-          </label>
-        </div>
-      </div>
-      <div class="filter__fieldset filter__fieldset--active filter__fieldset--range">
-        <button type="button" aria-label="Accordion Button">Price</button>
-        <div class="filter__range-controls">
-          <div class="filter__scale">
-            <div class="filter__bar"></div>
+        <div class="filter__fieldset filter__fieldset--active">
+          <button type="button">Product</button>
+          <div class="filter__item">
+            <label>
+              <input type="checkbox" name="check" checked>
+              <span>Necklaces</span>
+            </label>
+            <label>
+              <input type="checkbox" name="check" checked>
+              <span>Chokers</span>
+            </label>
+            <label>
+              <input type="checkbox" name="check">
+              <span>Rings</span>
+            </label>
+            <label>
+              <input type="checkbox" name="check" checked>
+              <span>Earrings</span>
+            </label>
           </div>
-          <div class="filter__toggle filter__toggle--min"></div>
-          <span>$ 55</span>
-          <div class="filter__toggle filter__toggle--max"></div>
-          <span>$ 155</span>
         </div>
-      </div>
-      <div class="filter__buttons">
-        <button type="button" class="filter__apply" aria-label="Button Apply">Apply</button>
-        <button type="reset" class="filter__clearall" aria-label="Button Clear All">Clear All</button>
-      </div>
-    </form>
+        <div class="filter__fieldset filter__fieldset--active">
+          <button type="button" aria-label="Accordion Button">Material</button>
+          <div class="filter__item">
+            <label>
+              <input type="checkbox" name="check" checked>
+              <span>Gold</span>
+            </label>
+            <label>
+              <input type="checkbox" name="check" checked>
+              <span>Silver</span>
+            </label>
+          </div>
+        </div>
+        <div class="filter__fieldset filter__fieldset--active">
+          <button type="button" aria-label="Accordion Button">Collection</button>
+          <div class="filter__item">
+            <label>
+              <input type="checkbox" name="check" checked>
+              <span>Pink flamingo</span>
+            </label>
+            <label>
+              <input type="checkbox" name="check" checked>
+              <span>Dreams</span>
+            </label>
+          </div>
+        </div>
+        <div class="filter__fieldset filter__fieldset--active filter__fieldset--range">
+          <button type="button" aria-label="Accordion Button">Price</button>
+          <div class="filter__range-controls">
+            <div class="filter__scale">
+              <div class="filter__bar"></div>
+            </div>
+            <div class="filter__toggle filter__toggle--min"></div>
+            <span>$ 55</span>
+            <div class="filter__toggle filter__toggle--max"></div>
+            <span>$ 155</span>
+          </div>
+        </div>
+        <div class="filter__buttons">
+          <button type="button" class="filter__apply" aria-label="Button Apply">Apply</button>
+          <button type="reset" class="filter__clearall" aria-label="Button Clear All">Clear All</button>
+        </div>
+      </form>
+    </div>
   </div>
   <section class="products">
     <div class="products__head">
@@ -311,7 +315,10 @@
       <h2>The good stuff in your inbox </h2>
       <p>News and updates from CH. No spam, we promise.</p>
       <form method="post">
-        <input type="email" name="email" placeholder="Your E-mail">
+        <label>
+          <span class="visually-hidden">Email</span>
+          <input type="email" name="email" placeholder="Your E-mail" required>
+        </label>
         <button type="submit">
           Sign Up
           <svg width="29" height="9" viewBox="0 0 29 9">

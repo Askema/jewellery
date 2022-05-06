@@ -28,6 +28,7 @@
 
   @media (max-width: $mobile-width) {
     margin-top: 16px;
+    margin-bottom: 33px;
     padding-right: 40px;
   }
 }
@@ -49,7 +50,7 @@
   border: 0;
   width: 500px;
   border-bottom: 1px solid $color-default-white;
-  padding: 9px 0;
+  padding: 9px 120px 9px 0;
   color: $color-default-white;
   font-family: $ff-poppins;
   font-style: normal;
@@ -86,6 +87,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    top: 7px;
     right: -10px;
   }
 }

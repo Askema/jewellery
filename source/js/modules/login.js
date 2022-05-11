@@ -4,7 +4,7 @@ const loginOpenBtn = document.querySelector('.nav__user a');
 const emailInput = document.querySelector('.login [type="email"]');
 
 const overlay = document.querySelector('.overlay');
-const page = document.querySelector('page');
+const page = document.querySelector('.page');
 
 const closeLogin = function () {
   if (login.classList.contains('login--open')) {

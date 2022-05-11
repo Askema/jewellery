@@ -2609,7 +2609,7 @@ button.swiper-pagination-bullet {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  row-gap: 22px;
+  row-gap: 23px;
 }
 
 .products__head {
@@ -2649,7 +2649,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
-  margin-top: 1.2rem;
+  margin-top: 23px;
   margin-bottom: 0;
 }
 
@@ -2658,6 +2658,11 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 130%;
   margin-top: 0.3rem;
+  margin-bottom: 9px;
+}
+
+.products img {
+  width: 100%;
 }
 
 .products hr {
@@ -3476,16 +3481,21 @@ button.swiper-pagination-bullet {
     padding: 20px 45px;
   }
 
+  .subscription p {
+    margin-bottom: 34px;
+  }
+
   .subscription form {
     width: 84%;
   }
 
   .subscription input {
-    width: 100%;
+    width: 99%;
   }
 
   .subscription button {
     right: 0;
+    top: 8px;
   }
 
   .contacts {
@@ -3700,13 +3710,13 @@ button.swiper-pagination-bullet {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
-    row-gap: 0;
+    row-gap: 1px;
     padding: 0 35px;
   }
 
   .products__wrapper {
     margin: 49px 0 21px;
-    row-gap: 23px;
+    row-gap: 28px;
   }
 
   .products__item {
@@ -3716,6 +3726,7 @@ button.swiper-pagination-bullet {
   }
 
   .products img {
+    width: auto;
     min-height: 137px;
   }
 
@@ -3901,6 +3912,7 @@ button.swiper-pagination-bullet {
 
   .main--catalog {
     margin-top: 51px;
+    margin-bottom: 76px;
   }
 
   .login {
@@ -3997,7 +4009,7 @@ button.swiper-pagination-bullet {
   }
 
   .intro {
-    padding: 193px 38px 185px;
+    padding: 191px 38px 185px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 64, 52, 0.7)), to(rgba(86, 64, 52, 0.7))), url("../img/intro-mobile.jpg");
     background-image: -o-linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-mobile.jpg");
     background-image: linear-gradient(rgba(86, 64, 52, 0.7), rgba(86, 64, 52, 0.7)), url("../img/intro-mobile.jpg");
@@ -4154,7 +4166,7 @@ button.swiper-pagination-bullet {
   }
 
   .image-pagination {
-    margin-top: 36px;
+    margin-top: 42px;
     position: relative;
   }
 
@@ -4232,7 +4244,7 @@ button.swiper-pagination-bullet {
   }
 
   .ask h2 {
-    margin-bottom: 1.7rem;
+    margin-bottom: 29px;
   }
 
   .ask button {
@@ -4339,6 +4351,10 @@ button.swiper-pagination-bullet {
 
   .products h3 {
     margin-top: 1rem;
+  }
+
+  .products p {
+    margin-bottom: 13.8px;
   }
 
   .products__navigation {

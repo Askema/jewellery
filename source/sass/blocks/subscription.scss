@@ -26,6 +26,10 @@
   margin-bottom: 36px;
   color: $color-zorba;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
   @media (max-width: $mobile-width) {
     margin-top: 16px;
     margin-bottom: 33px;
@@ -63,7 +67,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    width: 99%;
   }
 
   @media (max-width: $mobile-width) {
@@ -84,6 +88,7 @@
 
   @media (max-width: $tablet-width) {
     right: 0;
+    top: 8px;
   }
 
   @media (max-width: $mobile-width) {

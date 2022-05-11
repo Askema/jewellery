@@ -1,3 +1,4 @@
+/* eslint-disable */
 const body = document.querySelector('.body');
 
 // Проверяем, можно ли использовать Webp формат
@@ -15,4 +16,3 @@ function canUseWebp() {
 }
 
 canUseWebp();
-

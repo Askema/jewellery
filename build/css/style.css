@@ -2015,8 +2015,7 @@ button.swiper-pagination-bullet {
 
 .subscription input:-webkit-autofill,
 .subscription input:-webkit-autofill:hover,
-.subscription input:-webkit-autofill:focus
-.subscription input:-webkit-autofill {
+.subscription input:-webkit-autofill:focus {
   -webkit-text-fill-color: #ffffff;
   -webkit-box-shadow: 0 0 0 10px transparent inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
@@ -3047,6 +3046,12 @@ button.swiper-pagination-bullet {
   left: 0;
   right: 0;
   z-index: 11;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.login::-webkit-scrollbar {
+  width: 0;
 }
 
 .login--open {

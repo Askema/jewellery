@@ -75,6 +75,16 @@
   }
 }
 
+.subscription input:-webkit-autofill,
+.subscription input:-webkit-autofill:hover,
+.subscription input:-webkit-autofill:focus
+.subscription input:-webkit-autofill {
+  -webkit-text-fill-color: $color-default-white;
+  -webkit-box-shadow: 0 0 0 10px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+}
+
 .subscription button {
   position: absolute;
   right: 75px;
@@ -85,6 +95,8 @@
   border: 0;
   background: transparent;
   top: 5px;
+  z-index: 7;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     right: 0;

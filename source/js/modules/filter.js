@@ -2,14 +2,14 @@ const filter = document.querySelector('.filter');
 const closeButton = document.querySelector('.filter button');
 const openButton = document.querySelector('.products button');
 
-const body = document.querySelector('.body');
+const page = document.querySelector('.page');
 const overlay = document.querySelector('.overlay');
 
 const closeModal = function () {
   if (filter.classList.contains('filter--open')) {
     filter.classList.remove('filter--open');
     overlay.classList.remove('overlay--active');
-    body.classList.remove('body--overlay');
+    page.classList.remove('page--overlay');
   }
 };
 
@@ -17,7 +17,7 @@ const openModal = function () {
   if (!filter.classList.contains('filter--open')) {
     filter.classList.add('filter--open');
     overlay.classList.add('overlay--active');
-    body.classList.add('body--overlay');
+    page.classList.add('page--overlay');
   }
 };
 

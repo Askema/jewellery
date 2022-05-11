@@ -13,6 +13,7 @@
 
 .ask__container {
   border-bottom: 1px solid $color-medium-wood;
+  overflow: auto;
 }
 
 .ask__container:nth-child(4n) {
@@ -33,8 +34,8 @@
   background-color: $color-default-white;
   color: $color-wood-bark;
   cursor: pointer;
-  padding: 2.6rem;
-  padding-bottom: 2.8rem;
+  padding: 41.6px;
+  padding-bottom: 44.8px;
   width: 100%;
   border: none;
 
@@ -55,6 +56,10 @@
     top: 3.1rem;
     transition: 0.3s;
   }
+}
+
+.ask br {
+  display: none;
 }
 
 .ask .active {
@@ -96,11 +101,11 @@
   }
 
   .ask button {
-    padding: 2.6rem 3rem 2.8rem;
+    padding: 41.6px 48px 44.8px;
   }
 
   .ask button::after {
-    right: 3.3rem;
+    right: 52.8px;
   }
 
   .active {
@@ -142,12 +147,16 @@
   .ask button {
     font-size: 16px;
     line-height: 22px;
-    padding: 18px 62px 18px 25px;
+    padding: 18px 50px 18px 25px;
   }
 
   .ask button::after {
     right: 23px;
     top: 1.6rem;
+  }
+
+  .ask br {
+    display: block;
   }
 
   .ask p {

@@ -4,13 +4,13 @@ const loginOpenBtn = document.querySelector('.nav__user a');
 const emailInput = document.querySelector('.login [type="email"]');
 
 const overlay = document.querySelector('.overlay');
-const body = document.querySelector('body');
+const page = document.querySelector('page');
 
 const closeLogin = function () {
   if (login.classList.contains('login--open')) {
     login.classList.remove('login--open');
     overlay.classList.remove('overlay--active');
-    body.classList.remove('body--overlay');
+    page.classList.remove('page--overlay');
   }
 };
 
@@ -18,7 +18,7 @@ const openLogin = function () {
   if (!login.classList.contains('login--open')) {
     login.classList.add('login--open');
     overlay.classList.add('overlay--active');
-    body.classList.add('body--overlay');
+    page.classList.add('page--overlay');
     emailInput.focus();
   }
 };

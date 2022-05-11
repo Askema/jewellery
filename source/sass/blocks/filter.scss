@@ -360,6 +360,10 @@
     margin: 0 auto;
   }
 
+  .filter--open .filter__wrapper {
+    height: 85vh;
+  }
+
   .filter__close {
     top: -17px;
     right: -10px;
